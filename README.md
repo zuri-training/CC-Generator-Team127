@@ -2,6 +2,10 @@
 
 ## Introduction
 
+#### what are we building?
+we are building a library card of differnt kind of credit card designs whereby an authenticated (logged in) user can download the designs
+
+
 We have attach some of the required links
 
 [Project documentation](https://docs.google.com/document/d/1nSPZrMSkazsjBJe5UKSdXXIiXWSh-FHYP9ACT4WdLcg/edit?usp=sharing)
