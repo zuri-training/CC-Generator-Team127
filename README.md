@@ -1,8 +1,13 @@
-# CC-Generator-Team127
-#
-## Note to team Memebers:
-Please select your track branch (UXDesign, Frontend or Backend), Fork it and after that clone a copy of the repo. All commit should be made under your track branch.
+# credit-card-design-backend
 
-Having issues open a Issues request or better still reach out to me @oisavictor or @Dolphin for assistance.
+## 
 
-Thanks
+## To install
+npm run
+
+## To run
+npm run dev 
+
+## Usage
+On your postman input
+http://localhost:7000/api/signup
