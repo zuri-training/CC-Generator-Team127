@@ -3,7 +3,7 @@
 ## Introduction
 
 ### what are we building?
-we are building a library card of differnt kind of credit card designs whereby an authenticated (logged in) user can download the designs
+we are building a library card of different kind of credit card designs whereby an authenticated (logged in) user can download the designs
 
 #### Technologies that will be used
 ###### FRONTEND:
