@@ -11,12 +11,12 @@ we are building a library card of differnt kind of credit card designs whereby a
   * CSS
   * JAVASCRIPT
   
-###### BACKEND
+###### BACKEND:
   * NODEJS
   * mongoDB
 
 
-We have attach some of the required links
+We have attach some of the required links for better understanding of our project
 
 [Project documentation](https://docs.google.com/document/d/1nSPZrMSkazsjBJe5UKSdXXIiXWSh-FHYP9ACT4WdLcg/edit?usp=sharing)
 
