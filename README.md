@@ -1,6 +1,7 @@
 # CC-Generator-Team127
-#
+
 ## Introduction
+
 We have attache some of the required links
 
 Project documentation: https://docs.google.com/document/d/1nSPZrMSkazsjBJe5UKSdXXIiXWSh-FHYP9ACT4WdLcg/edit?usp=sharing
