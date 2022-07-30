@@ -1,8 +1,9 @@
 # credit-card-design-backend
 
-## 
+## Usage
 
-## To install
+To install
+
 npm run
 
 ## To run
@@ -14,8 +15,10 @@ http://localhost:7000/api/signup
 
 ## database schema
 
+
 ### User schema: 
 ![Screenshot (248)](https://user-images.githubusercontent.com/64624808/181905335-64a4c778-21af-422f-8cb0-80e427c4ab82.png)
+
 
 ### Comment schema:
 ![Screenshot (254)](https://user-images.githubusercontent.com/64624808/181905319-eb01d903-0d87-4fc7-a8ef-f5ef1c11a4d8.png)
