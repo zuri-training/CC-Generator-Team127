@@ -13,7 +13,7 @@ we are building a library card of different kind of credit card designs whereby 
   
 ###### BACKEND:
   * NODEJS
-  * mongoDB
+  * MONGODB
 
 
 We have attach some of the required links for better understanding of our project
