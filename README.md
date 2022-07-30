@@ -2,8 +2,18 @@
 
 ## Introduction
 
-#### what are we building?
+### what are we building?
 we are building a library card of differnt kind of credit card designs whereby an authenticated (logged in) user can download the designs
+
+#### Technologies that will be used
+###### FRONTEND:
+  * HTML
+  * CSS
+  * JAVASCRIPT
+  
+###### BACKEND
+  * NODEJS
+  * mongoDB
 
 
 We have attach some of the required links
