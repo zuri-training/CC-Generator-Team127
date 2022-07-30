@@ -3,6 +3,6 @@
 
 ### List of members: https://docs.google.com/spreadsheets/d/13-wTsqPr9UyZD96kKnywliCcZduENpLvDsflj7ooleg/edit?usp=sharing
 
-### Figma link: https://github.com/zuri-training/CC-Generator-Team127/tree/Backend-Dev
+### Figma link:
 
-### Database schema:
+### Database schema:  https://github.com/zuri-training/CC-Generator-Team127/tree/Backend-Dev
