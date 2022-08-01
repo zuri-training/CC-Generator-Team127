@@ -1,13 +1,24 @@
 # credit-card-design-backend
 
-## Usage
+### Usage
 
-To install
+```sh
+$ npm install
+```
 
-npm run
+```sh
+$ npm start
+# Or run with Nodemon
+$ npm run dev
 
-## To run
-npm run dev 
+# Visit http://localhost:7000
+```
+
+### MongoDB
+
+configure .env file with your MongoDB URI, local or Atlas
+
+
 
 ## Usage
 On your postman input
