@@ -6,6 +6,11 @@
 we are building a library card of different kind of credit card designs whereby an authenticated (logged in) user can download the designs
 
 #### Technologies that will be used
+###### DESIGN:
+  * FIGMA
+  * FIGJAM
+  * GOOGLE DOC
+  
 ###### FRONTEND:
   * HTML
   * CSS
