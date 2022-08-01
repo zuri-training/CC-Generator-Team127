@@ -2,8 +2,8 @@
 
 ## Introduction
 
-### what are we building?
-we are building a library card of different kind of credit card designs whereby an authenticated (logged in) user can download the designs
+### What are we building?
+We are building a library of different card designs where a user can browse through, interact with, and also have the options to generate personal and unique credit cards.
 
 #### Technologies that will be used
 ###### DESIGN:
