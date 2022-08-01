@@ -5,7 +5,8 @@
 ### What are we building?
 We are building a library of different card designs where a user can browse through, interact with, and also have the options to generate personal and unique credit cards.
 
-#### Technologies that will be used
+#### Tools that we are using:
+
 ###### DESIGN:
   * FIGMA
   * FIGJAM
@@ -21,7 +22,7 @@ We are building a library of different card designs where a user can browse thro
   * MONGODB
 
 
-We have attach some of the required links for better understanding of our project
+We have attached the necessary links for better understanding of our project.
 
 [Project documentation](https://docs.google.com/document/d/1nSPZrMSkazsjBJe5UKSdXXIiXWSh-FHYP9ACT4WdLcg/edit?usp=sharing)
 
