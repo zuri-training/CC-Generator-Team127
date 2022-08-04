@@ -9,4 +9,5 @@ router.post('/signup', controller.signup);
 // signin API route
 router.post('/signin', controller.signin);
 
+// export route
 module.exports = router;
