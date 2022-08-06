@@ -23,7 +23,7 @@ We are building a webapp that has a library of different types of credit card de
 
 ### This project was created by :
 
-David Adedurotimi
+David Adurotimi
 
 Emeka Ijeoma 
 
