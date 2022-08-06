@@ -1,4 +1,20 @@
-This website is about a library of different types of credit card designs that an authenticated user can interact with and download already designed credit card designs. The user can also interact with the designs by commenting,liking and also sharing on social media.
+
+## What are we building?
+We are building a webapp that has a library of different types of credit card designs that an authenticated user can interact with and download already designed credit card designs. The user can also interact with the designs by commenting,liking and also sharing on social media.
+
+#### Technologies used:
+###### Design
+* Figma
+* FigJam
+
+###### Frontend
+* HTML
+* CSS
+* JAVASCRIPT
+
+###### Backend
+* NODEJS
+* MONGODB
 
 This project was created by :
 
@@ -25,3 +41,4 @@ Omolade Oyelaja
 Tosin Oladeji
 
 Grace Adeola
+
