@@ -171,3 +171,43 @@ width: 250px;
   display: flex;
 }
   
+/*media queries for small screens*/
+@media screen and (max-width: 450px) {
+  
+  #row-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  #row-one-left {
+    justify-content: center;
+    width: 380px;
+    height: 500px;
+  }
+  #row-one-left > h1 {
+   margin-right: 5%;
+   padding: 10px;
+  }
+  #row-one-left > form {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  #row-one-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 100px;
+  }
+  #btn {
+    margin-left: 20%;
+  }
+  iframe {
+    padding: 7px;
+  }
+  .bottom-menu-item {
+ margin-top: 30%;
+
+  }
+}
