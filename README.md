@@ -8,7 +8,7 @@ We are building a webapp that has a library of different types of credit card de
 
 #### Technologies used:
 ###### Design
-* Figma
+* [Figma](https://www.figma.com/file/vu6DUnnrYcmQk0pceFn0x4/CC-Gen?node-id=7%3A3)
 * FigJam
 
 ###### Frontend
