@@ -45,6 +45,25 @@ header {
     font-size: 24px;
     color: #2196f3;
   }
+header .top-menu-item-home a:hover {
+  color: #0d47a1;
+}
+
+header .top-menu-item-get-started a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6c757d;
+  border: 2px solid #6c757d;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+header .top-menu-item-get-started a:hover {
+  color: #0d47a1;
+  background-color: #e9ecef;
+}
   #row-one {
     display: flex;
     flex-direction: row;
