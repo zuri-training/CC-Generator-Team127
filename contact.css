@@ -138,5 +138,7 @@ width: 250px;
   footer .bottom-menu-item a:hover {
     color: #e1b713;
   }
-  
+  footer .bottom-menu {
+  display: flex;
+}
   
