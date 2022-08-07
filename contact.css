@@ -45,7 +45,7 @@ header {
     font-size: 24px;
     color: #6c757d;
   }
-header .top-menu-item-home a:hover {
+header .top-menu-item a:hover {
   color: #0d47a1;
 }
 header .top-menu-item-home a {
