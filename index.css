@@ -31,7 +31,7 @@ header {
 .dark-mode > #top-logo-container > img {
   background-image: url("img/logo_bottom1")
 }
-.dark-mode > footer, main {
+.dark-mode > footer {
   background-color: black;
 }
   .btn-dark {
