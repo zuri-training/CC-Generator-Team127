@@ -24,7 +24,14 @@ header {
   .dark-mode {
     background-color: black;
     color: black;
-  } 
+  }
+.dark-mode > footer {
+  background-color: black;
+}
+.dark-mode >main>#row-one>#row-one-left {
+  background-color: black;
+  color: white;
+}
   .btn-dark {
     width: 70px;
     height: 30px;
