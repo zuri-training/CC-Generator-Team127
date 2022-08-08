@@ -21,7 +21,15 @@ header {
     justify-content: left;
     padding-top: 20px;
   }
-  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  } 
+  .btn-dark {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+  }
   #top-menu-container {
     width: 65%;
     display: flex;
