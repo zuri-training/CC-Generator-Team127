@@ -21,29 +21,42 @@ We are building a webapp that has a library of different types of credit card de
 * MONGODB
 
 
+
+We have attached the necessary links for better understanding of our project.
+
+[Project documentation](https://docs.google.com/document/d/1nSPZrMSkazsjBJe5UKSdXXIiXWSh-FHYP9ACT4WdLcg/edit?usp=sharing)
+
+[List of members](https://docs.google.com/spreadsheets/d/13-wTsqPr9UyZD96kKnywliCcZduENpLvDsflj7ooleg/edit?usp=sharing)
+
+[Figma link](https://www.figma.com/file/vu6DUnnrYcmQk0pceFn0x4/CC-Gen?node-id=7%3A3)
+
+[Database schema](https://github.com/zuri-training/CC-Generator-Team127/blob/Backend-Dev/README.md)
+
+[Figjam link](https://www.figma.com/file/tXPnmUReyZ8hiuBU2IjBam/USER-RESEARCH-2-TASK-(Copy)?node-id=15%3A202)
+
 ### This project was created by :
 
-David Adurotimi
+- David Adurotimi
 
-Emeka Ijeoma 
+- Emeka Ijeoma 
 
-Victor Oisamoje
+- Victor Oisamoje
 
-Nneji Ben
+- Nneji Ben
 
-Adesanmi Oyindamola
+- Adesanmi Oyindamola
 
-Okonkwo Ifeyinwa
+- Okonkwo Ifeyinwa
 
-Oreoluwa Omoteso
+- Oreoluwa Omoteso
 
-Ekpenyong Duckham
+- Ekpenyong Duckham
 
-Ihom Philip
+- Ihom Philip
 
-Omolade Oyelaja
+- Omolade Oyelaja
 
-Tosin Oladeji
+- Tosin Oladeji
 
-Grace Adeola
+- Grace Adeola
 
