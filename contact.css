@@ -23,7 +23,7 @@ header {
   }
   .dark-mode {
     background-color: black;
-    color: white;
+    color: black;
   } 
   .btn-dark {
     width: 70px;
