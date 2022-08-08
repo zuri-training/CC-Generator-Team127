@@ -28,6 +28,12 @@ header {
     background-color: black;
     color: white;
   } 
+.dark-mode > #top-logo-container > img {
+  background-image: url("img/logo_bottom1")
+}
+.dark-mode > footer, main {
+  background-color: black;
+}
   .btn-dark {
     width: 70px;
     height: 30px;
