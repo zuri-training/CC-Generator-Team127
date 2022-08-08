@@ -33,6 +33,9 @@ header img {
     background-color: black;
     color: white;
   } 
+.dark-mode > footer {
+background-color: navy;
+}
   .btn-dark {
     width: 70px;
     height: 30px;
