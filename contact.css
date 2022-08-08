@@ -33,7 +33,7 @@ header {
   color: white;
 }
 .dark-mode > header > #top-logo-container img {
-  background-image: url("img/logo_bottom1")
+  background-image: url("img/logo_bottom1");
 }
   .btn-dark {
     width: 70px;
