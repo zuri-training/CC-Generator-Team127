@@ -36,27 +36,27 @@ We have attached the necessary links for better understanding of our project.
 
 ### This project was created by :
 
-- David Adurotimi
+> David Adurotimi
 
-- Emeka Ijeoma 
+> Emeka Ijeoma 
 
-- Victor Oisamoje
+> Victor Oisamoje
 
-- Nneji Ben
+> Nneji Ben
 
-- Adesanmi Oyindamola
+> Adesanmi Oyindamola
 
-- Okonkwo Ifeyinwa
+> Okonkwo Ifeyinwa
 
-- Oreoluwa Omoteso
+> Oreoluwa Omoteso
 
-- Ekpenyong Duckham
+> Ekpenyong Duckham
 
-- Ihom Philip
+> Ihom Philip
 
-- Omolade Oyelaja
+> Omolade Oyelaja
 
-- Tosin Oladeji
+> Tosin Oladeji
 
-- Grace Adeola
+> Grace Adeola
 
