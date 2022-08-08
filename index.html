@@ -20,6 +20,7 @@
       </div>
       <!--Insert links for menu items below-->
       <div id="top-menu-container">
+        <button class="btn-dark" onclick="myFunction()">Dark mode</button>
         <nav class="top-menu">
           <div class="top-menu-item-home"><a href="index.html">Home</a></div>
           <div class="top-menu-item"><a href="">Library</a></div>
@@ -162,5 +163,11 @@
         </nav>
       </div>
     </footer>
+          <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
   </body>
 </html>
