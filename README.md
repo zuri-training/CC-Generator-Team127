@@ -61,6 +61,6 @@ We have attached the necessary links for better understanding of our project.
 > Grace Adeola
 
 ## Contributing
- For detailed information on how to go about contributing to this project
+ For detailed information on how to go about contributing to this project <br/>
  [contibution guide](https://github.com/zuri-training/CC-Generator-Team127/blob/main/contributing.md)
 
