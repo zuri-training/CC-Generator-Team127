@@ -10,7 +10,7 @@ Everyone was once a beginner at one point, so pls relax and read the following i
 * #### clone the repositry to your local machine
   The next thing you want to do is to clone (make a copy) the CC-generator-team27 on your profile, to your local machine. To do that,
 
-  * Copy the link of your own Zc main repository (the one you forked).
+  * Copy the link of your own CC-generator-team27 repository (the one you forked).
   * Open the folder you want to work on your machine.
   * Open your favourite editor.
   * Open the terminal.
