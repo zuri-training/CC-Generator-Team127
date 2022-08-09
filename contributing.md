@@ -23,7 +23,7 @@ Now that you have the local copy of Zuri main. There are many developers contrib
   * go to your local machine terminal, in the project folder
   * run `git remote add upstream https://github.com/zuri-training/CC-Generator-Team127.git`
 
-Now, your local copy can fetch (update) from the original source, and you won't miss out on any update.
+    Now, your local copy can fetch (update) from the original source, and you won't miss out on any update.
 
 * Commiting your changes
   Now, you can start making changes that relates to your issues and then commiting them. To do this, follow these instructions:
