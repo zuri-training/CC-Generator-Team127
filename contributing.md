@@ -43,5 +43,5 @@ Now that you have the local copy of Zuri main. There are many developers contrib
     > Which pushes your changes to your online copy, after which you then open a pull request.
     
  * Opening pull request <br/>
-  Once you push the changes to your repo, the `Compare & pull request` button will appear in GitHub page of your repo
-  Click on the button and make your request.
+  Once you push the changes to your repo, the `Compare & pull request` button will appear in the GitHub page of your repo
+  Click on the `Compare & pull request` then create a pull requst.
