@@ -34,6 +34,11 @@ We have attached the necessary links for better understanding of our project.
 
 [Figjam link](https://www.figma.com/file/tXPnmUReyZ8hiuBU2IjBam/USER-RESEARCH-2-TASK-(Copy)?node-id=15%3A202)
 
+
+## Contributing
+ For detailed information on how to go about contributing to this project <br/>
+ [contibution guide](https://github.com/zuri-training/CC-Generator-Team127/blob/main/contributing.md)
+
 ### This project was created by :
 
 > David Adurotimi
@@ -60,7 +65,4 @@ We have attached the necessary links for better understanding of our project.
 
 > Grace Adeola
 
-## Contributing
- For detailed information on how to go about contributing to this project <br/>
- [contibution guide](https://github.com/zuri-training/CC-Generator-Team127/blob/main/contributing.md)
 
