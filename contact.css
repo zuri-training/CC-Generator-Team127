@@ -268,12 +268,12 @@ bottom: 63.41%;
   #row-one-right {
     display: flex;
     justify-content: center;
-    height: 280;
+    height: 200px;
     margin-top: 100px;
     padding: 100px;
   }
     #row-one-right img {
-    margin-top: 40rem;
+    margin-top: 42rem;
   }
   #btn {
     margin-left: 20%;
