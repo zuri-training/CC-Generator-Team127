@@ -2,6 +2,39 @@ const User = require('../model/user.js');
 const nodemailer = require('nodeMailer');
 require('dotenv').config();
 
+// handle errors
+const handleErrors = (err) => {
+  console.log(err.message, err.code);
+  let errors = { name: '', email: '', password: '' };
+
+  // incorrect email
+  if (err.message === 'incorrect email') {
+    errors.email = 'that email is not registered';
+  }
+
+  // incorrect email
+  if (err.message === 'incorrect password') {
+    errors.password = 'that password is incorrect';
+  }
+  // duplicate email error
+  if (err.code === 11000) {
+    errors.email = 'that email is already registered';
+    return errors;
+  }
+
+  // validation errors
+  if (err.message.includes('auth validation failed')) {
+    // console.log(err);
+    Object.values(err.errors).forEach(({ properties }) => {
+      // console.log(val);
+      console.log(properties);
+      errors[properties.path] = properties.message;
+    });
+  }
+
+  return errors;
+};
+
 // signin API
 exports.signin = async (req, res) => {
   const { email, password } = req.body;
@@ -10,7 +43,9 @@ exports.signin = async (req, res) => {
     const token = await user.generateAuthToken();
     res.send({ user, token });
   } catch (error) {
-    res.status(400).send(error);
+    const errors = handleErrors(err);
+    res.status(400).json({ errors });
+    // res.status(400).send(error);
   }
 };
 
@@ -25,72 +60,72 @@ exports.signup = async (req, res) => {
     const token = await user.generateAuthToken();
     res.status(201).send({ user, token });
   } catch (error) {
-    res.status(400).send(error);
+    const errors = handleErrors(err);
+    res.status(400).json({ errors });
+    // res.status(400).send(error);
   }
 };
 
 // routes API
 exports.library = (req, res) => {
-  res.render('library.ejs')
+  res.render('library.ejs');
 };
 
 exports.index = (req, res) => {
-  res.status(200).render('index.ejs')
+  res.status(200).render('index.ejs');
 };
 
-exports.about = (req, res) => {
-  res.status(200).render('about.ejs')
-},
-exports.contact = (req, res) => {
-  res.status(200).render('contact.ejs')
-}
+(exports.about = (req, res) => {
+  res.status(200).render('about.ejs');
+}),
+  (exports.contact = (req, res) => {
+    res.status(200).render('contact.ejs');
+  });
 
 exports.signUp = (req, res) => {
-  res.status(200).render('signup.ejs')
+  res.status(200).render('signup.ejs');
 };
 
 exports.signIn = (req, res) => {
-  res.status(200).render('signin.ejs')
+  res.status(200).render('signin.ejs');
 };
 
 // Sending Email API
-exports.sendEmail = (req, res) => {(
-  fname = req.body.fname,
-  lname = req.body.lname,
-  tel = req.body.tel,
-  from = req.body.from,
-  subject = req.body.subject,
-  message = req.body.body);
+exports.sendEmail = (req, res) => {
+  (fname = req.body.fname),
+    (lname = req.body.lname),
+    (tel = req.body.tel),
+    (from = req.body.from),
+    (subject = req.body.subject),
+    (message = req.body.body);
 
   // create reusable transporter object using the default SMTP transport
   const Transporter = nodemailer.createTransport({
-      host: process.env.host,
-      port: 2525,
-      auth: {
+    host: process.env.host,
+    port: 2525,
+    auth: {
       user: process.env.user,
-      pass: process.env.pass
-      }
+      pass: process.env.pass,
+    },
   });
 
   // send mail with defined transport object
   let mailOptions = {
-      from: `${from}`,  // list of sender
-      to:"cc_team127@gmail.com",  // list of receivers
-      subject: `${subject}`, // Subject line
-      text: `${message}` // plain text body
-      // html: "<b>Hello world?</b>", // html body
+    from: `${from}`, // list of sender
+    to: 'cc_team127@gmail.com', // list of receivers
+    subject: `${subject}`, // Subject line
+    text: `${message}`, // plain text body
+    // html: "<b>Hello world?</b>", // html body
   };
-
 
   // Transporter.sendMail object
   Transporter.sendMail(mailOptions, (err) => {
-      if (err) {
-      console.log("Error " + err);
-      res.status(500).send("Something went wrong.")
-      } else {
-        res.status(200).send("<h1>Email successfully!</h1>");
-        console.log("Email sent successfully");
-      };
-      
-  })
+    if (err) {
+      console.log('Error ' + err);
+      res.status(500).send('Something went wrong.');
+    } else {
+      res.status(200).send('<h1>Email successfully!</h1>');
+      console.log('Email sent successfully');
+    }
+  });
 };
