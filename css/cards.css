@@ -18,7 +18,16 @@ header, footer {
     align-items: center;
     justify-content: space-between;
 }
-
+.dark-mode {
+    background-color: black;
+    color: black;
+  } 
+ 
+  .btn-dark {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+  }
 nav {
     display: flex;
     flex-direction: row;
