@@ -147,7 +147,12 @@ width: 250px;
     justify-content: right;
     margin-top: -50px;
   }
-
+#row-one-right >img {
+    position: absolute;
+right: 12.13%;
+top: 19.04%;
+bottom: 63.41%;
+  }
   iframe {
     padding: 20px;
     margin-top: 25px;
