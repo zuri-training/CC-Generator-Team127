@@ -6,7 +6,7 @@ const app = express();
 PORT = process.env.PORT || 7000;
 
 // connect to the database
-mongoose.connect('mongodb://localhost/credit');
+mongoose.connect('mongodb://localhost/credit-card-api');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
