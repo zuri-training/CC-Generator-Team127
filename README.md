@@ -65,4 +65,9 @@ We have attached the necessary links for better understanding of our project.
 
 > Grace Adeola
 
+### The Team
+<a href="https://github.com/zuri-training/CC-Generator-Team127/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=zuri-training/CC-Generator-Team127" height="70" width="250"/>
+</a>
+
 
