@@ -13,7 +13,7 @@
 - [Pushing code to the live-Server - backend](https://github.com/zuri-training/CC-Generator-Team127/issues/49)
 
 
-# The Team
+### The Team
 <a href="https://github.com/zuri-training/CC-Generator-Team127/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=zuri-training/CC-Generator-Team127" />
+  <img src="https://contrib.rocks/image?repo=zuri-training/CC-Generator-Team127" height="34" width="24"/>
 </a>
