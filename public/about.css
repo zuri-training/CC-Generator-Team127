@@ -1,0 +1,203 @@
+/*GENERAL*/
+
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#top-logo-container {
+  width: 25%;
+  display: flex;
+  justify-content: left;
+  padding-top: 20px;
+}
+
+header img {
+  height: 80px;
+  width: 187px;
+}
+  .dark-mode {
+    background-color: black;
+    color: white;
+  } 
+.dark-mode > footer {
+background-color: navy;
+}
+  .btn-dark {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+  }
+#top-menu-container {
+  width: 65%;
+  display: flex;
+  justify-content: right;
+  padding-top: 20px;
+}
+
+header .top-menu {
+  display: flex;
+  position: relative;
+}
+
+header .top-menu-item {
+  padding-left: 40px;
+}
+
+header .top-menu-item a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6c757d;
+}
+
+header .top-menu-item a:hover {
+  color: #0d47a1;
+}
+
+header .top-menu-item-about a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2196f3;
+  padding-left: 40px;
+}
+
+header .top-menu-item-about a:hover {
+  color: #0d47a1;
+}
+
+header .top-menu-item-get-started a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6c757d;
+  border: 2px solid #6c757d;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+header .top-menu-item-get-started a:hover {
+  color: #0d47a1;
+  background-color: #e9ecef;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #0d47a1;
+  padding-top: 15px;
+}
+
+p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #343a40;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 100px;
+}
+
+/*FIRST ROW*/
+
+#row-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#row-one-left {
+  width: 45%;
+  display: flexbox;
+  justify-content: left;
+  margin-top: 50px;
+}
+
+#row-one-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+/*SECOND ROW*/
+
+#row-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+#row-two-left {
+  display: flexbox;
+  justify-content: center;
+  width: 45%;
+}
+
+#row-two-right {
+  width: 45%;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1565c0;
+  margin-top: 100px;
+}
+
+#bottom-logo-container {
+  width: 25%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#bottom-menu-container {
+  width: 65%;
+  display: flex;
+  justify-content: right;
+  margin-top: 60px;
+}
+
+footer .bottom-menu-item a {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px;
+  color: #e3f2fd;
+}
+
+footer .bottom-menu-item a:hover {
+  color: #e1b713;
+}
+
+footer .bottom-menu {
+  display: flex;
+}
