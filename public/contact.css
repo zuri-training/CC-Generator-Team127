@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+body {
+  overflow-x: hidden;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #top-logo-container {
+    width: 25%;
+    display: flex;
+    justify-content: left;
+    padding-top: 20px;
+  }
+  .dark-mode {
+    background-color: black;
+    color: black;
+  }
+.dark-mode > footer {
+  background-color: black;
+}
+.dark-mode >main>#row-one>#row-one-left {
+  background-color: black;
+  color: white;
+}
+.dark-mode > header > #top-logo-container img {
+  background-image: url("img/logo_bottom1");
+}
+  .btn-dark {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  #top-menu-container {
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+  }
+  
+  header .top-menu {
+    display: flex;
+    position: relative;
+  }
+  
+  header .top-menu-item {
+    padding-left: 40px;
+  }
+  
+  header .top-menu-item a {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #6c757d;
+  }
+header .top-menu-item a:hover {
+  color: #0d47a1;
+}
+header .top-menu-item-home a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2196f3;
+}
+
+header .top-menu-item-home a:hover {
+  color: #0d47a1;
+}
+header .top-menu-item-get-started a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6c757d;
+  border: 2px solid #6c757d;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+header .top-menu-item-get-started a:hover {
+  color: #0d47a1;
+  background-color: #e9ecef;
+}
+  #row-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #row-one-left {
+    padding: 10px;
+    height: 500px;
+    width: 40%;
+    justify-content: left;
+    margin-top: 40px;
+    background: white;
+    box-shadow: 0 0 20px rgba(162,187,202,0.75);
+  }
+  #row-one-left > h1 {
+    text-align: center;
+  }
+  #row-one-left > form {
+    font-size: 1rem;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+ input {
+height: 25px;
+width: 250px;
+  }
+ #message {
+  height: 100px;
+}
+#btn {
+  margin-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 00;
+  font-size: 17px;
+  color: #e3f2fd;
+  background-color: #1565c0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  width: 100px;
+  cursor: pointer;
+}
+.row-one-left-two >img {
+  height: 150px;
+  width: 100%;
+  margin-top: 10px;
+}
+  #row-one-right {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    margin-top: -50px;
+  }
+
+  iframe {
+    padding: 20px;
+    margin-top: 25px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1565c0;
+  }
+  
+  #bottom-logo-container {
+    width: 25%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  #bottom-menu-container {
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    margin-top: 60px;
+  }
+  
+  footer .bottom-menu-item a {
+    font-family: "Vollkorn", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px;
+    color: #e3f2fd;
+  }
+  
+  footer .bottom-menu-item a:hover {
+    color: #e1b713;
+  }
+  footer .bottom-menu {
+  display: flex;
+}
+  
+/*media queries for small screens*/
+@media screen and (max-width: 450px) {
+  
+  #row-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  #row-one-left {
+    justify-content: center;
+    width: 380px;
+    height: 500px;
+  }
+  #row-one-left > h1 {
+   margin-right: 5%;
+   padding: 10px;
+  }
+  #row-one-left > form {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  #row-one-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 100px;
+  }
+  #btn {
+    margin-left: 20%;
+  }
+  iframe {
+    padding: 7px;
+  }
+  .bottom-menu-item {
+ margin-top: 30%;
+
+  }
+}

@@ -1,12 +1,31 @@
 const express = require('express');
+const userRoute = express.Router();
 const controller = require('../controllers/userController');
 
-const router = express.Router();
 
 // signup API route
-router.post('/signup', controller.signup);
+userRoute.post('/signup', controller.signup);
+userRoute.get('/signup', controller.signUp);
 
 // signin API route
-router.post('/signin', controller.signin);
+userRoute.post('/signin', controller.signin);
+userRoute.get('/signin', controller.signIn);
 
-module.exports = router;
+// library API route
+userRoute.get('/library', controller.library);
+
+// sendEmail API route
+userRoute.post('/sendEmail', controller.sendEmail);
+
+// index API route
+userRoute.get('/index', controller.index);
+userRoute.get('/', controller.index);
+
+// about API route
+userRoute.get('/about', controller.about);
+
+// contact-us API route
+userRoute.get('/contact', controller.contact);
+
+
+module.exports = userRoute;
