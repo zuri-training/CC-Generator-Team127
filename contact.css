@@ -8,6 +8,7 @@
   }
 body {
   overflow-x: hidden;
+    font-family: ubuntu;
 }
 header {
     display: flex;
@@ -122,9 +123,15 @@ header .top-menu-item-get-started a:hover {
  input {
 height: 25px;
 width: 250px;
+     font-style: italic;
+     opacity: 0.5;
   }
+textarea {
+    resize: none;
  #message {
   height: 100px;
+       font-style: italic;
+     opacity: 0.5;
 }
 #btn {
   margin-top: 10px;
