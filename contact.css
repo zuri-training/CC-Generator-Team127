@@ -109,6 +109,9 @@ header .top-menu-item-get-started a:hover {
   }
   #row-one-left > h1 {
     text-align: center;
+       font-family: Ubuntu;
+    color: #1976D2;
+    font-size: 32px;
   }
   #row-one-left > form {
     font-size: 1rem;
