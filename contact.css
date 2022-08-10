@@ -254,7 +254,7 @@ bottom: 63.41%;
   #row-one-left {
     justify-content: center;
     width: 380px;
-    height: 500px;
+    height: 650px;
   }
   #row-one-left > h1 {
    margin-right: 5%;
@@ -268,9 +268,12 @@ bottom: 63.41%;
   #row-one-right {
     display: flex;
     justify-content: center;
-      al
+    height: 280;
     margin-top: 100px;
     padding: 100px;
+  }
+    #row-one-right img {
+    margin-top: 40rem;
   }
   #btn {
     margin-left: 20%;
