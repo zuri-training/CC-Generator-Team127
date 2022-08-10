@@ -1,5 +1,4 @@
 /*GENERAL*/
-
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
@@ -11,7 +10,6 @@
 }
 
 /*HEADER*/
-
 header {
   display: flex;
   flex-direction: row;
@@ -31,7 +29,7 @@ header img {
 }
   .dark-mode {
     background-color: black;
-    color: white;
+    color: #ffff;
   } 
 .dark-mode > footer {
 background-color: navy;
@@ -121,7 +119,6 @@ p {
 }
 
 /*FIRST ROW*/
-
 #row-one {
   display: flex;
   flex-direction: row;
@@ -143,7 +140,6 @@ p {
 }
 
 /*SECOND ROW*/
-
 #row-two {
   display: flex;
   flex-direction: row;
@@ -162,7 +158,6 @@ p {
 }
 
 /*FOOTER*/
-
 footer {
   display: flex;
   flex-direction: row;
