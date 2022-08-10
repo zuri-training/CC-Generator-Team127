@@ -142,9 +142,11 @@ textarea {
   font-size: 17px;
   color: #e3f2fd;
   background-color: #1565c0;
-  border-radius: 10px;
+    border: none;
+  border-radius: 8px;
   padding: 10px 14px;
-  width: 100px;
+     width: 172px;
+  height: 48px;
   cursor: pointer;
 }
 .row-one-left-two >img {
