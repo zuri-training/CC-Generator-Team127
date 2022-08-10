@@ -3,7 +3,7 @@
 >### Track: Backend - Nodejs
 >### Student Id: I4G016448PSK
 
-## Task Assigned and Completed
+### Task Assigned and Completed
 - [Contact page logic - Nodemailer](https://github.com/zuri-training/CC-Generator-Team127/issues/54)
 - [comment schema](https://github.com/zuri-training/CC-Generator-Team127/issues/30)
 - [sign-in and sign-up API](https://github.com/zuri-training/CC-Generator-Team127/issues/19)
@@ -15,5 +15,5 @@
 
 ### The Team
 <a href="https://github.com/zuri-training/CC-Generator-Team127/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=zuri-training/CC-Generator-Team127" height="34" width="24"/>
+  <img src="https://contrib.rocks/image?repo=zuri-training/CC-Generator-Team127" height="70" width="250"/>
 </a>
