@@ -15,6 +15,7 @@ Everyone was once a beginner at one point, so pls relax and read the following i
   * Open your favourite editor.
   * Open the terminal.
   * Run git clone `git clone https://github.com/github_username/CC-Generator-Team127.git`
+    > e.g `git clone https://github.com/Tosin-webdev/CC-Generator-Team127.git`
       
 * Configure the upstream
 Now that you have the local copy of CC-Generator-Team127. There are many developers contributing to the project, so you have to update your local copy very frequently. Therefore, you need to connect your local copy to the original repository. To do that :
