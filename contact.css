@@ -100,7 +100,6 @@ header .top-menu-item-get-started a:hover {
   }
   
   #row-one-left {
-    padding: 10px;
     height: 500px;
     width: 40%;
     justify-content: left;
@@ -119,6 +118,7 @@ header .top-menu-item-get-started a:hover {
     gap: 20px;
     display: grid;
     grid-template-columns: auto auto;
+       padding: 10px;
   }
  input {
 height: 25px;
