@@ -185,7 +185,7 @@ footer .bottom-menu {
     flex-direction: row;
     justify-content: center;
   }
- 
+
   #top-logo-container {
     margin-right: auto;
     margin-left: 20px;
@@ -316,5 +316,4 @@ footer .bottom-menu {
     padding: 10px;
     padding-left: 0;
   }
-
 }

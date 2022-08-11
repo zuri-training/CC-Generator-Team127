@@ -204,7 +204,6 @@ hr {
 
 #row-three-right {
   margin-right: 60px;
-
 }
 
 .row-three-h2 {
@@ -499,7 +498,6 @@ footer .bottom-menu {
   #row-three-left img[src="images/platform_image.png"] {
     height: 250px;
     width: 250px;
-    align-content: center;
   }
 
   #row-three {
@@ -507,14 +505,6 @@ footer .bottom-menu {
     flex-direction: column;
     justify-content: center;
     margin-top: 0;
-  }
-
-  #row-three-left {
-    
-  }
-
-  #row-three-right {
-    width: auto;
   }
 
   .row-three-h2 {
@@ -629,5 +619,4 @@ footer .bottom-menu {
   footer .bottom-menu {
     display: flex;
   }
-
 }
