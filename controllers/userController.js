@@ -5,16 +5,16 @@ require('dotenv').config();
 // handle errors
 const handleErrors = (err) => {
   console.log(err.message, err.code);
-  let errors = { name: '', email: '', password: '' };
+  let errors = { firstName: '', lastName: '', email: '', password: '', date_of_birth: '' };
 
   // incorrect email
   if (err.message === 'incorrect email') {
-    errors.email = 'that email is not registered';
+    errors.email = 'Invalid email or password';
   }
 
   // incorrect email
   if (err.message === 'incorrect password') {
-    errors.password = 'that password is incorrect';
+    errors.password = 'Invalid email pr password';
   }
   // duplicate email error
   if (err.code === 11000) {
@@ -23,7 +23,7 @@ const handleErrors = (err) => {
   }
 
   // validation errors
-  if (err.message.includes('auth validation failed')) {
+  if (err.message.includes('User validation failed')) {
     // console.log(err);
     Object.values(err.errors).forEach(({ properties }) => {
       // console.log(val);
@@ -51,8 +51,8 @@ exports.signin = async (req, res) => {
 
 // signup API
 exports.signup = async (req, res) => {
-  const { name, email, password } = req.body;
-  const user = new User({ name, email, password });
+  const { firstName, lastName, email, password, date_of_birth } = req.body;
+  const user = new User({ firstName, lastName, email, password, date_of_birth });
   try {
     // save the user in the database
     await user.save();
@@ -60,7 +60,7 @@ exports.signup = async (req, res) => {
     const token = await user.generateAuthToken();
     res.status(201).send({ user, token });
   } catch (error) {
-    const errors = handleErrors(err);
+    const errors = handleErrors(error);
     res.status(400).json({ errors });
     // res.status(400).send(error);
   }

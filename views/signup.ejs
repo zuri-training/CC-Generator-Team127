@@ -1,59 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
     <link rel="stylesheet" type="text/css" href="signup.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="topnav">
-        <img src="./images/cardify.png" width="146" />
-  
-        <a href="index">Home</a>
-        <a href="about">About us</a>
-        <a href="signup">Get started</a>
-        <a href="signin">Sign In</a>
-      </div>
-      <div class="container">
-        <form action="#">
-            <p class="weight">Get Started</p>
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your first name" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your last name" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Email Address</span>
-                    <input type="text" placeholder="Enter your email address" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Date Of Birth (dd/mm/yy) </span>
-                    <input type="text" placeholder="Enter your date of birth" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="text" placeholder="Enter your password" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="text" placeholder="Confirm your password" required>
-                </div>
-                <div>
-                <input type="checkbox" name="remember me" value="remember me" tabindex="1">Remember Me
-                <br>
-                <input type="checkbox" name="terms and condition" value=" terms and condition" tabindex="2">I agree to all the Terms and Privacy Policy
-                <div class="button">
-                </div>
-                <input type="submit" value="Create Account" id="submit">
-            </div>
+      <img src="./images/cardify.png" width="146" />
+
+      <a href="index">Home</a>
+      <a href="about">About us</a>
+      <a href="signup">Get started</a>
+      <a href="signin">Sign In</a>
+    </div>
+    <div class="container">
+      <form action="/signup">
+        <p class="weight">Get Started</p>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input name="firstName" type="text" placeholder="Enter your first name" required />
+            <div class="firstName error"></div>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input name="lastName" type="text" placeholder="Enter your last name" required />
+            <div class="lastName error"></div>
+          </div>
+          <div class="input-box">
+            <span class="details">Email Address</span>
+            <input type="text" name="email" placeholder="Enter your email address" required />
+            <div class="email error"></div>
+          </div>
+          <div class="input-box">
+            <span class="details">Date Of Birth (dd/mm/yy) </span>
+            <input type="text" name="date_of_birth" placeholder="Enter your date of birth" required />
+            <div class="date_of_birth error"></div>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="password" placeholder="Enter your password" required />
+            <div class="password error"></div>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" name="password2" placeholder="Confirm your password" required />
+            <div class="password2 error"></div>
+          </div>
+          <div>
+            <input type="checkbox" name="remember me" value="remember me" tabindex="1" />Remember Me
+            <br />
+            <input type="checkbox" name="terms and condition" value=" terms and condition" tabindex="2" />I agree to all
+            the Terms and Privacy Policy
+            <div class="button"></div>
+            <input type="submit" value="Create Account" id="submit" />
+          </div>
         </div>
-        </form>
-      </div>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
+
+<script>
+  const form = document.querySelector('form');
+  const firstNameError = document.querySelector('.firstName.error');
+  const lastNameError = document.querySelector('.lastName.error');
+  const emailError = document.querySelector('.email.error');
+  const passwordError = document.querySelector('.password.error');
+  const password2Error = document.querySelector('.password2.error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    console.log('a');
+
+    // reset values
+    firstNameError.textContent = '';
+    lastNameError.textContent = '';
+    emailError.textContent = '';
+    passwordError.textContent = '';
+    password2Error.textContent = '';
+
+    // get the values
+    const firstName = form.firstName.value;
+    const lastName = form.lastName.value;
+    // console.log(form.name.value);
+    const email = form.email.value;
+    const password = form.password.value;
+    const password2 = form.password2.value;
+    const date_of_birth = form.date_of_birth.value;
+    console.log(firstName, lastName, email, password);
+
+    if (password !== password2) {
+      console.log('password does not match');
+      return (password2Error.textContent = 'password does not match');
+    }
+    try {
+      const res = await fetch('/signup', {
+        method: 'POST',
+        body: JSON.stringify({ firstName, lastName, email, password, date_of_birth }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await res.json();
+      console.log(data);
+      if (data.errors) {
+        firstNameError.textContent = data.errors.firstName;
+        lastNameError.textContent = data.errors.lastName;
+        emailError.textContent = data.errors.email;
+        passwordError.textContent = data.errors.password;
+      }
+      if (data.user) {
+        location.assign('/library');
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  });
+</script>
