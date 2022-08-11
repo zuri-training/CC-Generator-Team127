@@ -1,11 +1,16 @@
 const mongoose = require('mongoose');
-const validator = require('express-validator');
+const validator = require('validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema(
   {
-    name: {
+    firstName: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    lastName: {
       type: String,
       required: true,
       trim: true,
@@ -28,6 +33,9 @@ const userSchema = new mongoose.Schema(
       required: true,
       minlength: [6, 'Minimum password length is 6 characters'],
       trim: true,
+    },
+    date_of_birth: {
+      type: String,
     },
   },
   {
