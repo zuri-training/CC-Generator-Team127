@@ -150,6 +150,7 @@ main .row-one-paragraph {
   width: 30%;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding-right: 5px;
 }
 
 #row-two-right {
@@ -197,13 +198,13 @@ hr {
 }
 
 #row-three-left {
-  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #row-three-right {
-  width: 50%;
+  margin-right: 60px;
+
 }
 
 .row-three-h2 {
@@ -509,7 +510,7 @@ footer .bottom-menu {
   }
 
   #row-three-left {
-
+    
   }
 
   #row-three-right {
