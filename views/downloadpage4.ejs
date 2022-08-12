@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecard.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>Credit Card</title>
+</head>
+<body>
+   
+   <header>
+    <div id="top-logo-container">
+      <a href="index.html"
+        ><img
+          src="images/logo_top2.png"
+          alt="Logo"
+          height="80px"
+          width="187px"
+      /></a>
+    </div>
+    <!--Insert links for menu items below-->
+    <div id="top-menu-container">
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+        </button>
+      <nav class="top-menu">
+        <div class="top-menu-item-home"><a href="index.html">Home</a></div>
+         <div class="top-menu-item"><a href="cards.html">Library</a></div>
+        <div class="top-menu-item"><a href="about.html">About Us</a></div>
+        <div class="top-menu-item-get-started"><a href="signup.html">Get Started</a></div>
+        <div class="top-menu-item"><a href="sign in.html">Sign In</a></div>
+      </nav>
+    </div>
+  </header>
+
+
+    <div class="card">
+      <div class="front">
+          <img src="images/Geometric 8.png" alt="card front">
+  </div>
+
+<div class="back">
+    <img src="images/Geometric 8back.png" alt="">
+    </div>
+    </div>
+    
+    <button class="download">
+      <select name="cars" id="cars">
+        <option value="download">Download</option>
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+        <option value="pdf">PDF</option>
+           <option value="zip">Allformat.zip</option>
+      </select>
+    </button>
+
+  <div class="container">
+    <div class="wrapper">
+      <button class="btn btn-like">
+
+        <span class="btn-icon btn--icon-default">
+          <!--<span class="fa fa-heart"></span>-->
+          <img src="images/Like button (2).png" alt="">
+        </span>
+
+        <span class="btn-icon btn--icon-liked">
+          <img src="images/Like button (2).png" alt="">
+        </span>
+
+        <span class="btn-content  btn-content--liked">
+        </span>
+
+        <span class="btn-content btn-content--default">
+        </span>
+      </button>
+
+      </div>
+      
+      <div>
+        <button onclick="showHide()" class="comment">
+          <img src="images/Comment button.png" alt="">
+        </button>
+
+       <div class="button-comment" id="cmmt">
+        <textarea name="" id="" cols="20" rows="2"></textarea>
+        <button type="submit">Send</button>
+       </div>
+
+   
+        </div>
+     
+    <button class="share-btn">
+       <img src="images/Share button.png" alt=""> </button>
+   
+
+    <div class="share-options">
+        <p class="title">share</p>
+        <div class="social-media">
+            <button class="social-media-btn"><i class="far fa-folder-open"></i></button>
+            <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+            <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+            <button class="social-media-btn"><i class="fab fa-twitter"></i></button>
+            <button class="social-media-btn"><i class="fab fa-facebook-f"></i></button>
+            <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+        </div>
+        <div class="link-container">
+            <p class="link">https://example.com/share</p>
+            <button class="copy-btn">copy</button>
+        </div>
+    </div>
+    <button id="save"  >
+      <img src="images/Save button.png" alt="">
+    </button>
+   
+    <!--<span class="iconify" id="save" data-icon="ci:download" data-width="35"></span>-->
+    </div>
+
+
+
+  <footer>
+    <div id="bottom-logo-container">
+      <a href="index.html"
+        ><img
+          src="images/logo_bottom.png"
+          alt="Logo"
+          height="80px"
+          width="187"
+      /></a>
+    </div>
+    <!--Insert links for menu items below-->
+    <div id="bottom-menu-container">
+      <nav class="bottom-menu">
+        <div class="bottom-menu-item"><a href="">Documentation</a></div>
+        <div class="bottom-menu-item"><a href="">Support</a></div>
+        <div class="bottom-menu-item"><a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+
+        <script>
+
+
+   	// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem('darkMode'); 
+
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
+const enableDarkMode = () => {
+  // 1. Add the class to the body
+  document.body.classList.add('darkmode');
+  // 2. Update darkMode in localStorage
+  localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+  // 1. Remove the class from the body
+  document.body.classList.remove('darkmode');
+  // 2. Update darkMode in localStorage 
+  localStorage.setItem('darkMode', null);
+}
+ 
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+
+// When someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+  // get their darkMode setting
+  darkMode = localStorage.getItem('darkMode'); 
+  
+  // if it not current enabled, enable it
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  // if it has been enabled, turn it off  
+  } else {  
+    disableDarkMode(); 
+  }
+});
+
+
+const button = document.querySelector('.btn')
+
+button.addEventListener('click', () => {
+    button.classList.toggle('liked')
+})
+
+const shareBtn = document.querySelector('.share-btn');
+const shareOptions = document.querySelector('.share-options');
+
+shareBtn.addEventListener('click', () => {
+    shareOptions.classList.toggle('active');
+})
+
+
+
+const card = document.querySelector(".card");
+card.addEventListener("click", () => {
+card.classList.toggle("is-flipped");
+});
+white_check_mark
+eyes
+raised_hands
+
+
+
+///let buttonComment = document.querySelector(".button-comment");
+///let isShow = true;
+//function showHide() {
+ // if (isShow) {
+  //  buttonComment.style.display = "none";
+ //   isShow = false;
+//  } else {
+  //  buttonComment.style.display = "block";
+ //   isShow = true;
+ // }
+//}
+
+//function showHide() {
+ // isShow = !isShow;
+  //buttonComment.classList.toggle("hide", isShow)
+//}
+
+
+let buttonComment = document.querySelector(".button-comment");
+let comment = document.querySelector(".comment");
+
+comment.addEventListener('click', () =>{
+if(buttonComment.style.display === 'none'){
+  buttonComment.style.display = 'block';
+} else {
+  buttonComment.style.display = 'none';
+}
+})
+    </script>
+</body>
+</html>
