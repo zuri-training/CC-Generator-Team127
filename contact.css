@@ -52,8 +52,7 @@ header {
     }
   
   body {
-    /*background: var(--background);*/
-    background: url("images/4880206.jpg");
+    background: var(--background);
     color: var(--background);
     overflow-x: hidden;
   }
@@ -121,6 +120,7 @@ header .top-menu-item-get-started a:hover {
     justify-content: left;
     margin-top: 40px;
     background: white;
+      color: black;
     box-shadow: 0 0 20px rgba(162,187,202,0.75);
   }
   #row-one-left > h1 {
