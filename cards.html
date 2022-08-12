@@ -17,7 +17,9 @@
     <div class="container">
         <header>
             <img src="images/logo_top2.png" alt="cardify_logo">
-                <button class="btn-dark" onclick="myFunction()">Dark mode</button>
+                 <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+        </button>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="cards.html">Library</a>
@@ -136,11 +138,7 @@
         </nav>
       </div>
     </footer>
-    <script>
-        function myFunction() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
-        }
+    <script src="index.js">
         </script>
 </body>
 </html>
