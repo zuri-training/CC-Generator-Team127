@@ -50,7 +50,7 @@ nav a{
   
   body {
     /*background: var(--background);*/
-    background: url("img/4880206.jpg");
+    background: url("images/4880206.jpg");
     color: var(--foreground);
     overflow-x: hidden;
   }
