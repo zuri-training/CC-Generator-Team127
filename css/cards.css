@@ -78,6 +78,10 @@ header a:hover {
     align-items: center;
 }
 
+.lib:visited {
+    color: #1976D2;
+}
+
 .start:hover {
     border: 1px solid #2196f3 ;
 }
