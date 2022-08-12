@@ -162,14 +162,15 @@
   width: 100px;
   height: 30px;
   border: none;
-  background: blue;
+  background: #1565c0;
   position: relative;
-  bottom: 33rem;
+  bottom: 29rem;
   left: 70%;
 }
 select {
-  background: blue;
+  background: #1565c0
   border: none;
+    color: white;
 }
 
 :root {
