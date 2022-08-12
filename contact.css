@@ -138,7 +138,7 @@ header .top-menu-item-get-started a:hover {
   }
  input {
 height: 25px;
-width: 250px;
+width: 245px;
   }
 input::placeholder {
      font-style: italic;
