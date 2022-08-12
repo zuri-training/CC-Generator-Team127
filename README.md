@@ -3,18 +3,21 @@
 ## Introduction
 
 ### what are we building?
+
 we are building a library card of different kind of credit card designs whereby an authenticated (logged in) user can download the designs
 
 #### Technologies that will be used
-###### FRONTEND:
-  * HTML
-  * CSS
-  * JAVASCRIPT
-  
-###### BACKEND:
-  * NODEJS
-  * MONGODB
 
+###### FRONTEND:
+
+- HTML
+- CSS
+- JAVASCRIPT
+
+###### BACKEND:
+
+- NODEJS
+- MONGODB
 
 We have attach some of the required links for better understanding of our project
 
@@ -26,4 +29,6 @@ We have attach some of the required links for better understanding of our projec
 
 [Database schema](https://github.com/zuri-training/CC-Generator-Team127/blob/Backend-Dev/README.md)
 
-[Figjam link](https://www.figma.com/file/tXPnmUReyZ8hiuBU2IjBam/USER-RESEARCH-2-TASK-(Copy)?node-id=15%3A202)
+# [Figjam link](<https://www.figma.com/file/tXPnmUReyZ8hiuBU2IjBam/USER-RESEARCH-2-TASK-(Copy)?node-id=15%3A202>)
+
+A library of different types of credit card designs that an authenticated user can interact with and download already designed credit card designs
