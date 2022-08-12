@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <img src="images/Logocardify.png" alt="">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="signup.html">Get Started</a>
+            <a href="sign in.html">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="container">
+       
+        <div class="left">
+            <h2>Get Started</h2>
+            <form action="">
+                <div class="one">
+                    <p>
+                        <label for="name">First Name</label> <br>
+                        <input type="text" name="fname" id="name" minlength="4" maxlength="10" required>
+                    </p>
+                    <p>
+                        <label for="name">Last Name</label> <br>
+                        <input type="text" name="lname" id="next" minlength="3" maxlength="15" required>
+                    </p>
+                </div>
+
+                <div class="two">
+                    <p>
+                        <label for="email">Email Address</label> <br>
+                        <input type="email" name="email" id="mail" required>
+                    </p>
+                    <p class="birth">
+                        <label for="date" class="dob">Date of Birth<span id="pat">(dd/mm/yy)</span></label> <br>
+                        <input type="datetime" name="date" id="born" required>
+                    </p>
+                </div>
+
+                <div class="three">
+                    <p>
+                        <label for="password">Password</label> <br>
+                        <input type="password" name="pword" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    </p>
+                    <p>
+                        <label for="password">Confirm Password</label> <br>
+                        <input type="password" name="pword" id="word" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    </p>
+                </div>
+
+                <p>
+                    <input type="checkbox" name="myself" id="remind" required> <span>Remember me</span>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="approve" id="policy" required > <span>I agree to all the <a href="" class="terms">Terms</a> and <a href="" class="privacy">Privacy Policy</a>  </span>
+                </p>
+
+                <div class="buttons">
+                <button type="submit">Create Account</button>
+                <p>Already have an account&quest;<a href="" class="sign">Sign In</a> </p>
+                </div>
+            </form>
+            
+        </div>
+
+        <div class="right">
+            <div class="cards">
+                <img src="images/Group 29three.png" height="215px" width="300px">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <img src="images/Group 24cardify.png" alt="">
+            <nav id="info">
+                <a href="">DeveloperCentre</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookie Policy</a>
+                <a href="">Terms of Use</a>
+                <a href="">Support</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

@@ -18,7 +18,16 @@ header, footer {
     align-items: center;
     justify-content: space-between;
 }
-
+.dark-mode {
+    background-color: black;
+    color: black;
+  } 
+ 
+  .btn-dark {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+  }
 nav {
     display: flex;
     flex-direction: row;
@@ -162,6 +171,7 @@ main {
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .see-more:hover {
@@ -173,7 +183,11 @@ main {
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
+<<<<<<< HEAD
     margin-right: 40px;
+=======
+    margin-right: 100px;
+>>>>>>> d2aeaee7859fd2bc07808887cdc05d6bffa94acc
 }
 
 footer {
