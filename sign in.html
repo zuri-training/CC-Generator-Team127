@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Page</title>
+    <link rel="stylesheet" type="text/css" href="sign in.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <img src="./images/cardify.png" width="146" />
+ <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+        </button>
+      <a href="index.html">Home</a>
+      <a href="about us.html">About us</a>
+      <a href="sign up.html">Get started</a>
+      <a href="sign in.html">Sign In</a>
+    </div>
+    <div class="container">
+      <form>
+        <p class="weight">Hey there, welcome back!</p>
+        <label
+          >Email
+          <input type="email"class="box"required placeholder="Enter your email address"
+        /></label>
+        <label
+          >Password
+          <input type="password" class="box" placeholder="Enter your password"
+        /></label>
+        <p class="pass"><a href="#forgot" >Forgot Password?</a></p>
+        <input type="submit" value="Login" id="submit" />
+        <p class="class">
+          Don't Have an account yet? <a href="sign up.html">Get started</a>
+        </p>
+      </form>
+      <div class="side">
+        <img src="./images/Frame 46@2x.png" alt="" />
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
