@@ -83,22 +83,26 @@ header a:hover {
 }
 
 
-/* main {
+main {
     width: 100%;
     display: block;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-} */
+}
 
 .one, .two, .three {
     width: 100%;
 }
 
 .one img, .two img, .three img {
-    width: 47%;
+    width: 100%;
 }
+
+/* .card a {
+    width: 50%;
+} */
 
 /* .mini {
     margin-right: 30px;
@@ -117,18 +121,39 @@ header a:hover {
     margin-bottom: 40px;
 }
 
-.card:hover {
+/* .card:hover {
     border-radius: 25px;
     transform: scale(1.01);
     transition: ease-in-out 160ms;
-}
+} */
 
+.card {
+    /* width: 40%; */
+    /* height: 195px; */
+    position: relative;
+    display: inline-flex;
+}
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.card:hover .img-top {
+    display: inline;
+    /* transform: scale(1.01); */ 
+    transition: ease-in-out 2000ms;
+    }
 .title-txt {
     margin-left: 35px;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+.flexx {
+    display: flex;
+}
 .see-more {
     color: #1976d2;
     background: transparent;
@@ -148,7 +173,7 @@ header a:hover {
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
-    margin-right: 80px;
+    margin-right: 40px;
 }
 
 footer {
@@ -197,7 +222,7 @@ footer .bottom-menu {
 @media screen and (max-width: 426px) {
     
     header {
-        /* width: 50%; */
+        /* width: auto; */
         /* margin-right: 150px; */
         display: flex;
         flex-direction: column;
@@ -247,11 +272,14 @@ footer .bottom-menu {
     }
 
     .title-txt {
-    margin-left: 20px;
+    margin-left: 8px;
     font-size: 1em;
     margin-bottom: 10px;
     }
 
+    .see {
+    margin-right: 0px;
+    }
     .see-more {
     color: #1976d2;
     background: transparent;
@@ -314,9 +342,9 @@ footer .bottom-menu {
      header {
         /* width: 50%; */
         /* margin-right: 150px; */
-        display: flex;
+        display: block;
         flex-direction: column;
-        height: 0;
+        height: auto;
         align-items: self-start;
     }
 
@@ -336,11 +364,19 @@ footer .bottom-menu {
         justify-content: center;
     }
 
+    nav {
+        justify-content: flex-end;
+    }
+
     .one, .two, .three {
-        width: 50%;
+        width: 100%;
     }
 
     .container {
     margin: 8px 20px;
     }
+
+    .title-txt {
+    margin-left: 30px;
+}
 }
