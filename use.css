@@ -7,7 +7,40 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
-
+ :root {
+    --clr-light: #f9f9f7;
+    --clr-dark: #00332a;
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+  }
+  
+  .darkmode {
+    --clr-light: #eeeeea;
+    --clr-dark: #080808;
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+    background: var(--clr-dark);
+  }
+  .dark-mode-toggle {
+      position: absolute;
+      z-index: 100;
+      top: 1em;
+      right: 1em;
+      color: var(--foreground);
+      border: 2px solid currentColor;
+      padding: 4px;
+      background: transparent;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+    }
+  
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    overflow-x: hidden;
+  }
 body {
     margin-right: 120px;
     width: 100%;
