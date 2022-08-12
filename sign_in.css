@@ -255,6 +255,11 @@ footer .bottom-menu {
     font-size: 10px;
   }
 
+  header nav .top-menu-sign-in a {
+    font-size: 10px;
+    color: #adb5bd;
+  }
+
   header nav .top-menu-get-started a {
     font-size: 10px;
     border: none;
@@ -263,17 +268,75 @@ footer .bottom-menu {
     margin-right: 2px;
   }
 
+  /*GENERAL*/
+
+  h1 {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
   /*FIRST ROW*/
 
-  #row-one-right img[src="images/laptop_user.svg"] {
-    width: 259px;
-    height: 310px;
+  #row-one-right img[src="images/image_sign_in_page.PNG"] {
+    width: 256px;
+    height: 216px;
+    padding: 20px 0;
   }
 
   #row-one {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+  }
+
+  #row-one-left {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #row-one-right {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  #sign-in-form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  main label {
+    font-size: 14px;
+  }
+
+  main input {
+    margin-bottom: 15px;
+  }
+
+  main form p {
+    font-size: 12px;
+  }
+
+  #login-button {
+    height: 48px;
+    border-radius: 4px;
+    margin: 30px 0;
+    font-size: 14px;
+  }
+
+  .row-one-left-par {
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
+
+  .row-one-left-par a {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 100px;
   }
 
   /*FOOTER*/
