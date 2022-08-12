@@ -40,7 +40,9 @@
     }
   
   body {
-    background: var(--background);
+       /*background: var(--background);*/
+    background: url("images/4880206.jpg");
+   
     color: var(--foreground);
     overflow-x: hidden;
   }
