@@ -350,11 +350,11 @@ footer .bottom-menu {
 
   .column-one input {
     display: block;
-    width: 200px;
+    width: auto;
   }
 
   .column-two input {
-    width: 200px;
+    width: auto;
   }
 
   .remember-text {
