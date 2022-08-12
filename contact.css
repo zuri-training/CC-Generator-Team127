@@ -54,7 +54,7 @@ header {
   body {
     /*background: var(--background);*/
     background: url("images/4880206.jpg");
-    color: var(--foreground);
+    color: var(--background);
     overflow-x: hidden;
   }
   #top-menu-container {
