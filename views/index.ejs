@@ -10,28 +10,22 @@
   <body>
     <header>
       <div id="top-logo-container">
-        <a href="/"
+        <a href="index"
           ><img
-            src="images/logo_top.png"
+            src="images/logo_top.svg"
             alt="Logo"
             height="80px"
             width="187px"
         /></a>
       </div>
-
-     
       <!--Insert links for menu items below-->
-      <div id="top-menu-container">
-      <button class="btn-dark" onclick="myFunction()">Dark mode</button>
-        <nav class="top-menu">
-          <div class="top-menu-item-home"><a href="/">Home</a></div>
-          <div class="top-menu-item"><a href="library">Library</a></div>
-          <div class="top-menu-item"><a href="about">About Us</a></div>
-          <div class="top-menu-item-get-started"><a href="signup">Get Started</a></div>
-          <div class="top-menu-item"><a href="signin">Sign In</a></div>
+        <nav id="top-menu-container">
+          <div class="top-menu-home"><a href="index">Home</a></div>
+          <div class="top-menu-library"><a href="library">Library</a></div>
+          <div class="top-menu-about-us"><a href="about">About Us</a></div>
+          <div class="top-menu-get-started"><a href="signup">Get Started</a></div>
+          <div class="top-menu-sign-in"><a href="signin">Sign In</a></div>
         </nav>
-      </div>
-      
     </header>
     <main>
       <div id="row-one">
@@ -42,7 +36,7 @@
             your creativity could make your cards more appealing.
           </p>
           <!-- Edit buttons below to include link -->
-          <a href="signin"
+          <a href=""
             ><button id="generate-card-button-top">
               Generate Your Card
             </button></a
@@ -126,11 +120,11 @@
 
       <div id="row-four">
         <div id="row-four-left">
-          <a href="/contact"><h3 class="row-four-h3">Get in Touch!</h3></a>
+          <a href=""><h3 class="row-four-h3">Get in Touch!</h3></a>
           <p class="row-four-paragraph">
             Have a fresh concept? Not sure where to start? Want to discuss only?
           </p>
-          <a href="/contact"><h3 class="row-four-h3">Contact us</h3></a>
+          <a href=""><h3 class="row-four-h3">Contact us</h3></a>
         </div>
         <div id="row-four-right">
           <div id="text-box">
@@ -138,7 +132,7 @@
             <p class="row-four-right-p">
               Create your brand new card right away.
             </p>
-            <a href="signin"
+            <a href=""
               ><button id="generate-card-button-bottom">
                 Generate Your Card
               </button></a
@@ -149,7 +143,7 @@
     </main>
     <footer>
       <div id="bottom-logo-container">
-        <a href="/index"
+        <a href="index"
           ><img
             src="images/logo_bottom.png"
             alt="Logo"
@@ -162,11 +156,12 @@
         <nav class="bottom-menu">
           <div class="bottom-menu-item"><a href="">Documentation</a></div>
           <div class="bottom-menu-item"><a href="">Support</a></div>
-          <div class="bottom-menu-item"><a href="/contact">Contact Us</a>
+          <div class="bottom-menu-item"><a href="">Contact Us</a>
         </nav>
       </div>
-    </footer>
-          <script>
+      </footer>
+ 
+     <script>
       function myFunction() {
          var element = document.body;
          element.classList.toggle("dark-mode");

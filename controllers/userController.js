@@ -43,7 +43,7 @@ exports.signin = async (req, res) => {
     const token = await user.generateAuthToken();
     res.send({ user, token });
   } catch (error) {
-    const errors = handleErrors(err);
+    const errors = handleErrors(error);
     res.status(400).json({ errors });
     // res.status(400).send(error);
   }
