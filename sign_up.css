@@ -42,51 +42,34 @@ header nav a:hover {
   color: #0d47a1;
 }
 
-header nav .top-menu-sign-in a {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  color: #2196f3;
-}
-
-header nav .top-menu-about-us a:hover {
-  color: #0d47a1;
-}
-
 header nav .top-menu-get-started a {
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: #adb5bd;
-  border: 2px solid #adb5bd;
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 header nav .top-menu-get-started a:hover {
   color: #0d47a1;
-  background-color: #e9ecef;
 }
 
 /*GENERAL*/
 
 h1 {
-  color: #212529;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 37px;
+  color: #1976d2;
   margin-top: 48px;
   margin-bottom: 48px;
   text-align: center;
 }
 
 /*FIRST ROW*/
-
 #row-one {
   display: flex;
   justify-content: center;
@@ -96,9 +79,21 @@ h1 {
 #row-one-left {
   width: 45%;
   box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
-#sign-in-form {
+#row-one-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  background-color: #1565c0;
+  box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+  border-radius: 0px 16px 16px 0px;
+}
+
+#sign-up-form {
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -113,70 +108,110 @@ main label {
 }
 
 main input {
-  width: 100%;
-  padding: 12px 0;
+  padding: 8px 0;
   padding-left: 5px;
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
-main form p {
-  text-align: right;
-  margin-top: -5px;
-  color: #1565c0;
-  font-family: "Vollkorn";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+.column-one {
+  margin-right: auto;
 }
 
-#login-button {
-  width: 100%;
-  height: 48px;
-  background: #1565c0;
-  border: none;
-  border-radius: 4px;
-  margin: 50px 0;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  cursor: pointer;
+.column-one input {
+  display: block;
+  width: 220px;
 }
 
-.row-one-left-par {
+.column-two input {
+  width: 220px;
+}
+
+.column-two input,
+label {
+  display: block;
+}
+
+.top-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.remember-container {
+  display: flex;
+}
+
+.remember-text {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #212529;
-  text-align: center;
-  margin-bottom: 219px;
+  padding-left: 5px;
+  padding-top: 1px;
 }
 
-.row-one-left-par a {
+.agree-container {
+  display: flex;
+}
+
+.agree-text {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #212529;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+
+.terms-link,
+.privacy-link {
+  color: #1976d2;
+}
+
+.bottom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-account-button {
+  color: #ffffff;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #1565c0;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  width: 300px;
+}
+
+.already-text {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: 212529;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+.sign-in-link {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #1565c0;
-  text-align: center;
-  margin-bottom: 219px;
-}
-
-#row-one-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-  background-color: #1565c0;
-  box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
-  border-radius: 0px 16px 16px 0px;
 }
 
 /*FOOTER*/
@@ -261,19 +296,6 @@ footer .bottom-menu {
     padding: 0px;
     margin-left: 2px;
     margin-right: 2px;
-  }
-
-  /*FIRST ROW*/
-
-  #row-one-right img[src="images/laptop_user.svg"] {
-    width: 259px;
-    height: 310px;
-  }
-
-  #row-one {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
   }
 
   /*FOOTER*/
