@@ -17,7 +17,7 @@ header {
     height: 80px;
     /* border: 1px solid black; */
     margin-left: 120px;
-    margin-top: 48px;
+    margin-top: 58px;
     margin-right: 255px;
     display: flex;
     align-items: center;
@@ -26,13 +26,14 @@ header {
 
 nav {
     width: 500px;
-    height: 44px;
+    height: 55px;
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 8px 8px 8px 8px;
+    margin-bottom: 25px;
 }
 
 a {
@@ -166,7 +167,7 @@ footer img {
 
 .info a{
     color: #E3F2FD;
-    padding-top: 133px;
+    padding-top: 107px;
 }
 
 .how:visited {
