@@ -30,5 +30,3 @@ We have attach some of the required links for better understanding of our projec
 [Database schema](https://github.com/zuri-training/CC-Generator-Team127/blob/Backend-Dev/README.md)
 
 # [Figjam link](<https://www.figma.com/file/tXPnmUReyZ8hiuBU2IjBam/USER-RESEARCH-2-TASK-(Copy)?node-id=15%3A202>)
-
-A library of different types of credit card designs that an authenticated user can interact with and download already designed credit card designs
