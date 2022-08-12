@@ -172,3 +172,106 @@ footer img {
 .how:visited {
     color: #1976D2;
 }
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 426px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        width: 305px;
+        margin-top: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    header img {
+        height: 50px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .simple {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        width: 305px;
+        margin-top: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .start, .read {
+        height: 250px;
+        width: 100%;
+        margin-right: 120px;
+    }
+
+    .three {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        width: 305px;
+        margin-top: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .first, .second, .third {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0;
+        height: 400px;
+    }
+
+    .first img, .second img, .third img {
+        height: 100px;
+    }
+
+    .contact {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 305px;
+        margin-top: 0;
+        margin-left: 0;
+        height: 300px;
+        font-size: 24px;
+    }
+
+    .help {
+        width: 100%;
+        margin-right: 120px;
+    }
+
+    .reach {
+        width: 100%;
+        margin-right: 60px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        width: 305px;
+        margin-top: 0;
+        margin-left: 0;
+        height: 200px;
+    }
+
+    footer img {
+        width: 250px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 400px;
+    }
+
+    .info a {
+        padding-bottom: 250px;
+    }
+}
