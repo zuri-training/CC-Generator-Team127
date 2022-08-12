@@ -1,7 +1,7 @@
 /*GENERAL*/
 
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
   text-decoration: none;
@@ -14,83 +14,59 @@
 
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 #top-logo-container {
-  width: 25%;
-  display: flex;
-  justify-content: left;
-  padding-top: 20px;
+  margin-right: auto;
+  margin-left: 60px;
+  margin-top: 20px;
 }
-.dark-mode {
-    background-color: black;
-    color: white;
-  } 
-.dark-mode > #top-logo-container > img {
-  background-image: url("img/logo_bottom1")
-}
-.dark-mode > footer {
-  background-color: black;
-}
-  .btn-dark {
-    width: 70px;
-    height: 30px;
-    border-radius: 20px;
-  }
+
 #top-menu-container {
-  width: 65%;
   display: flex;
-  justify-content: right;
-  padding-top: 20px;
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
-header .top-menu {
-  display: flex;
-  position: relative;
-}
-
-header .top-menu-item {
-  padding-left: 40px;
-}
-
-header .top-menu-item a {
-  font-family: "Ubuntu", sans-serif;
+header nav a {
+  padding: 0 15px;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: #6c757d;
+  color: #adb5bd;
 }
 
-header .top-menu-item a:hover {
+header nav a:hover {
   color: #0d47a1;
 }
 
-header .top-menu-item-home a {
-  font-family: "Ubuntu", sans-serif;
+header nav .top-menu-home a {
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   color: #2196f3;
 }
 
-header .top-menu-item-home a:hover {
+header nav .top-menu-home a:hover {
   color: #0d47a1;
 }
 
-header .top-menu-item-get-started a {
-  font-family: "Ubuntu", sans-serif;
+header nav .top-menu-get-started a {
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: #6c757d;
-  border: 2px solid #6c757d;
+  color: #adb5bd;
+  border: 2px solid #adb5bd;
   padding: 10px;
-  margin-left: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-header .top-menu-item-get-started a:hover {
+header nav .top-menu-get-started a:hover {
   color: #0d47a1;
   background-color: #e9ecef;
 }
@@ -118,7 +94,7 @@ header .top-menu-item-get-started a:hover {
 }
 
 h1 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -126,7 +102,7 @@ h1 {
 }
 
 main .row-one-paragraph {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -138,13 +114,14 @@ main .row-one-paragraph {
 #generate-card-button-top {
   margin-top: 50px;
   margin-right: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #e3f2fd;
   background-color: #1565c0;
   border: none;
+  border-radius: 4px;
   padding: 12px 16px;
   cursor: pointer;
 }
@@ -173,6 +150,7 @@ main .row-one-paragraph {
   width: 30%;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding-right: 5px;
 }
 
 #row-two-right {
@@ -182,7 +160,7 @@ main .row-one-paragraph {
 }
 
 .row-two-h3 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -192,7 +170,7 @@ main .row-one-paragraph {
 }
 
 .row-two-paragraph {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -220,15 +198,16 @@ hr {
 }
 
 #row-three-left {
-  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #row-three-right {
-  width: 50%;
+  margin-right: 60px;
 }
 
 .row-three-h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -238,7 +217,7 @@ hr {
 }
 
 .row-three-paragraph {
-  font-family: "Vollkorn";
+  font-family: 'Vollkorn';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -271,7 +250,7 @@ hr {
 }
 
 .row-four-h3 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -285,7 +264,7 @@ hr {
 }
 
 .row-four-paragraph {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -294,7 +273,7 @@ hr {
 }
 
 .row-four-right-h3 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -304,7 +283,7 @@ hr {
 }
 
 .row-four-right-p {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -315,7 +294,7 @@ hr {
 }
 
 #generate-card-button-bottom {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -357,7 +336,7 @@ footer {
 }
 
 footer .bottom-menu-item a {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -372,4 +351,272 @@ footer .bottom-menu-item a:hover {
 
 footer .bottom-menu {
   display: flex;
+}
+
+/*RESPONSIVE MODE*/
+
+@media screen and (max-width: 720px) {
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #top-logo-container {
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  header img {
+    height: 40px;
+    width: 93.5px;
+  }
+
+  #top-menu-container {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  header nav a {
+    font-size: 10px;
+    padding: 3px;
+  }
+
+  header nav .top-menu-home a {
+    font-size: 10px;
+  }
+
+  header nav .top-menu-get-started a {
+    font-size: 10px;
+    border: none;
+    padding: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  /*FIRST ROW*/
+
+  #row-one-right img[src='images/credit_cards_stack.png'] {
+    height: 227px;
+    width: 206.5px;
+  }
+
+  #row-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #row-one-left {
+    width: auto;
+    display: flexbox;
+    justify-content: left;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  #row-one-right {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding-left: 5px;
+  }
+
+  main .row-one-paragraph {
+    font-size: 12px;
+    letter-spacing: 0.015em;
+    padding-top: 16px;
+  }
+
+  #generate-card-button-top {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  /*SECOND ROW*/
+
+  #row-two {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: center;
+  }
+
+  hr {
+    height: 2px;
+    width: 20px;
+    margin-top: 10px;
+  }
+
+  .row-two-h3 {
+    font-size: 16px;
+    line-height: 28px;
+    color: #1565c0;
+    padding: 0;
+  }
+
+  .row-two-paragraph {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #row-two-left {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+
+  #row-two-center {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+
+  #row-two-right {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+
+  /*THIRD ROW*/
+
+  #row-three-left img[src='images/platform_image.png'] {
+    height: 250px;
+    width: 250px;
+  }
+
+  #row-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .row-three-h2 {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .row-three-paragraph {
+    font-size: 12px;
+    line-height: 120%;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /*FOURTH ROW*/
+
+  #row-four {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+
+  #row-four-left {
+    background-color: #f8f9fa;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #row-four-right {
+    width: auto;
+    height: auto;
+    background-color: #1565c0;
+    margin: 20px;
+  }
+
+  .row-four-h3 {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 5px 0px;
+  }
+
+  .row-four-paragraph {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .row-four-right-h3 {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 20px;
+  }
+
+  .row-four-right-p {
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #generate-card-button-bottom {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #e3f2fd;
+    padding: 5px;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer img {
+    height: 40px;
+    width: 93.5px;
+  }
+
+  #bottom-logo-container {
+    width: auto;
+    margin: 10px 20px;
+  }
+
+  #bottom-menu-container {
+    width: auto;
+    display: flex;
+    justify-content: left;
+    margin: 10px 20px;
+  }
+
+  footer .bottom-menu-item a {
+    font-size: 10px;
+    line-height: 22px;
+    padding: 10px;
+    padding-left: 0;
+  }
+
+  footer .bottom-menu {
+    display: flex;
+  }
 }

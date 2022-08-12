@@ -4,65 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-    <link rel="stylesheet" type="text/css" href="signup.css" />
+    <title>Cardify :: Get Started</title>
+    <link rel="stylesheet" href="signup.css" />
   </head>
   <body>
-    <div class="topnav">
-      <img src="./images/cardify.png" width="146" />
+    <header>
+      <div id="top-logo-container">
+        <a href="index"
+          ><img src="images/logo_top.svg" alt="Logo" height="80px" width="187"
+        /></a>
+      </div>
+      <!--Insert links for menu items below-->
+      <div id="top-menu-container">
+        <nav id="top-menu-container">
+          <div class="top-menu-home"><a href="index">Home</a></div>
+          <div class="top-menu-library"><a href="library">Library</a></div>
+          <div class="top-menu-about-us"><a href="about">About Us</a></div>
+          <div class="top-menu-get-started"><a href="signup">Get Started</a></div>
+          <div class="top-menu-sign-in"><a href="signin">Sign In</a></div>
+        </nav>
+      </div>
+    </header>
+    <main>
 
-      <a href="index">Home</a>
-      <a href="about">About us</a>
-      <a href="signup">Get started</a>
-      <a href="signin">Sign In</a>
-    </div>
-    <div class="container">
-      <form action="/signup">
-        <p class="weight">Get Started</p>
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">First Name</span>
-            <input name="firstName" type="text" placeholder="Enter your first name" required />
-            <div class="firstName error"></div>
+        <div id="row-one">
+
+            <div id="row-one-left">
+                <h1>Get Started</h1>
+                <form id="sign-up-form" action="">
+
+                  <div class="top-form">
+
+                    <div class="column-one">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstName" placeholder="" required>
+                     <div class="firstName error"></div>
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" name="email" placeholder="" required>
+                        <div class="email error"></div>
+                      <label for="password">Password</label>
+                      <input type="password" id="password" name="password" placeholder="" required>
+                       <div class="password error"></div>
+                    </div>
+
+                    <div class="column-two">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastName" placeholder="">
+                     <div class="lastName error"></div>
+                    <label for="dob">Date of Birth (dd/mm/yy)</label>
+                    <input name="date_of_birth" type="date" id="dob" name="dob" placeholder="">
+                      <div class="date_of_birth error"></div>
+                    <label for="confirm-password">Confirm Password</label>
+                   
+                    <input type="password" id="confirm-password" name="password2" placeholder="" required>
+                      <div class="password2 error"></div>
+                  </div>
+
+                </div>
+
+                <div class="remember-container">
+                    <input type="checkbox" id="remember" name="remember" value="remember">
+                    <label class="remember-text" for="remember"> Remember me</label>
+                  </div>
+                   
+                  <div class="agree-container">
+                    <input type="checkbox" id="agree" name="agree" value="agree">
+                    <label class="agree-text" for="agree">I agree to all the <a class="terms-link" href="">Terms</a> and <a class="privacy-link" href="">Privacy Policy</a></label>
+                  </div>
+                
+                  <div class="bottom-form">
+                    <input class="create-account-button" type="submit" value="Create Account">
+                </form>
+                <p class="already-text">Already have an account? <a class="sign-in-link" href="signin">Sign in</a></p>
+              </div>
+                
+            
+            </div>
+    
+            <div id="row-one-right">
+                <img src="images/Group 29three.PNG" alt="" height="432" width="512px">
+            </div>
+    
           </div>
-          <div class="input-box">
-            <span class="details">Last Name</span>
-            <input name="lastName" type="text" placeholder="Enter your last name" required />
-            <div class="lastName error"></div>
-          </div>
-          <div class="input-box">
-            <span class="details">Email Address</span>
-            <input type="text" name="email" placeholder="Enter your email address" required />
-            <div class="email error"></div>
-          </div>
-          <div class="input-box">
-            <span class="details">Date Of Birth (dd/mm/yy) </span>
-            <input type="text" name="date_of_birth" placeholder="Enter your date of birth" required />
-            <div class="date_of_birth error"></div>
-          </div>
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="text" name="password" placeholder="Enter your password" required />
-            <div class="password error"></div>
-          </div>
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="text" name="password2" placeholder="Confirm your password" required />
-            <div class="password2 error"></div>
-          </div>
-          <div>
-            <input type="checkbox" name="remember me" value="remember me" tabindex="1" />Remember Me
-            <br />
-            <input type="checkbox" name="terms and condition" value=" terms and condition" tabindex="2" />I agree to all
-            the Terms and Privacy Policy
-            <div class="button"></div>
-            <input type="submit" value="Create Account" id="submit" />
-          </div>
-        </div>
-      </form>
-    </div>
+
+    </main>
+    <footer>
+      <div id="bottom-logo-container">
+        <a href="index"
+          ><img
+            src="images/logo_bottom.png"
+            alt="Logo"
+            height="80px"
+            width="187"
+        /></a>
+      </div>
+      <!--Insert links for menu items below-->
+      <div id="bottom-menu-container">
+        <nav class="bottom-menu">
+          <div class="bottom-menu-item"><a href="">Documentation</a></div>
+          <div class="bottom-menu-item"><a href="">Support</a></div>
+          <div class="bottom-menu-item"><a href="">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
+
 
 <script>
   const form = document.querySelector('form');
@@ -78,7 +125,7 @@
 
     // reset values
     firstNameError.textContent = '';
-    lastNameError.textContent = '';
+    firstNameError.textContent = '';
     emailError.textContent = '';
     passwordError.textContent = '';
     password2Error.textContent = '';
@@ -106,13 +153,13 @@
       const data = await res.json();
       console.log(data);
       if (data.errors) {
-        firstNameError.textContent = data.errors.firstName;
-        lastNameError.textContent = data.errors.lastName;
+        firstNameError.textContent = data.errors.name;
+        lastNameError.textContent = data.errors.name;
         emailError.textContent = data.errors.email;
         passwordError.textContent = data.errors.password;
       }
       if (data.user) {
-        location.assign('/library');
+        location.assign('/signin');
       }
     } catch (error) {
       console.log(error);

@@ -1,7 +1,6 @@
 /*GENERAL*/
-
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
   text-decoration: none;
@@ -11,7 +10,6 @@
 }
 
 /*HEADER*/
-
 header {
   display: flex;
   flex-direction: row;
@@ -29,18 +27,18 @@ header img {
   height: 80px;
   width: 187px;
 }
-  .dark-mode {
-    background-color: black;
-    color: white;
-  } 
-.dark-mode > footer {
-background-color: navy;
+.dark-mode {
+  background-color: black;
+  color: #ffff;
 }
-  .btn-dark {
-    width: 70px;
-    height: 30px;
-    border-radius: 20px;
-  }
+.dark-mode > footer {
+  background-color: navy;
+}
+.btn-dark {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+}
 #top-menu-container {
   width: 65%;
   display: flex;
@@ -58,7 +56,7 @@ header .top-menu-item {
 }
 
 header .top-menu-item a {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -70,7 +68,7 @@ header .top-menu-item a:hover {
 }
 
 header .top-menu-item-about a {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -83,7 +81,7 @@ header .top-menu-item-about a:hover {
 }
 
 header .top-menu-item-get-started a {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -99,7 +97,7 @@ header .top-menu-item-get-started a:hover {
 }
 
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -109,7 +107,7 @@ h2 {
 }
 
 p {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -121,7 +119,6 @@ p {
 }
 
 /*FIRST ROW*/
-
 #row-one {
   display: flex;
   flex-direction: row;
@@ -143,7 +140,6 @@ p {
 }
 
 /*SECOND ROW*/
-
 #row-two {
   display: flex;
   flex-direction: row;
@@ -162,7 +158,6 @@ p {
 }
 
 /*FOOTER*/
-
 footer {
   display: flex;
   flex-direction: row;
@@ -185,7 +180,7 @@ footer {
 }
 
 footer .bottom-menu-item a {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
