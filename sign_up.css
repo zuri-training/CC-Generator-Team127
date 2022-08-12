@@ -298,6 +298,90 @@ footer .bottom-menu {
     margin-right: 2px;
   }
 
+  /*GENERAL*/
+
+  h1 {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  /*FIRST ROW*/
+
+  #row-one-right img[src="images/image_sign_in_page.PNG"] {
+    width: 256px;
+    height: 216px;
+    padding: 20px 0;
+  }
+
+  #row-one {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #row-one-left {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #row-one-right {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  #sign-up-form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  main label {
+    font-size: 14px;
+  }
+
+  main input {
+    padding: 6px 0;
+    margin-bottom: 15px;
+  }
+
+  .column-one input {
+    display: block;
+    width: 200px;
+  }
+
+  .column-two input {
+    width: 200px;
+  }
+
+  .remember-text {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+
+  .agree-text {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+
+  .create-account-button {
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-top: 20px;
+    width: 250px;
+  }
+
+  .already-text {
+    font-size: 14px;
+    margin-top: 13px;
+    margin-bottom: 60px;
+  }
+
   /*FOOTER*/
 
   footer {
