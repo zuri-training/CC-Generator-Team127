@@ -563,10 +563,15 @@ footer {
       margin-left: 5px;
     }
  
-      img 
+     .card img 
       {
     height: 250px;
           width: auto;
+    }
+   .download {
+        position : absolute;
+      bottom: 40%;
+        left: 2%;
     }
    
    .cards {
@@ -584,7 +589,8 @@ footer {
   }
   
    .container {
-   max-width: 100%;
+   max-width: 50%;
     position: relative;
 bottom: 15rem;
+       left: 22%
    }
