@@ -4,27 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Cardify :: About Us</title>
+    <title>Cardify :: About Us</title>
     <link rel="stylesheet" href="about.css" />
   </head>
   <body>
-    <header>
+ <header>
       <div id="top-logo-container">
-        <a href="/"
-          ><img src="images/logo_top.png" alt="Logo" height="80px" width="187"
+        <a href="index"
+          ><img
+            src="images/logo_top.svg"
+            alt="Logo"
+            height="80px"
+            width="187px"
         /></a>
       </div>
       <!--Insert links for menu items below-->
-      <div id="top-menu-container">
-      <button class="btn-dark" onclick="myFunction()">Dark mode</button>
-        <nav class="top-menu">
-          <div class="top-menu-item"><a href="/">Home</a></div>
-          <div class="top-menu-item"><a href="library">Library</a></div>
-          <div class="top-menu-item-about"><a href="about">About Us</a></div>
-          <div class="top-menu-item-get-started"><a href="signup">Get Started</a></div>
-          <div class="top-menu-item"><a href="signin">Sign In</a></div>
+        <nav id="top-menu-container">
+          <button class="btn-dark" onclick="myFunction()">Dark mode</button>
+          <div class="top-menu-home"><a href="index">Home</a></div>
+          <div class="top-menu-library"><a href="library">Library</a></div>
+          <div class="top-menu-about-us"><a href="about">About Us</a></div>
+          <div class="top-menu-get-started"><a href="signup">Get Started</a></div>
+          <div class="top-menu-sign-in"><a href="signin">Sign In</a></div>
         </nav>
-      </div>
     </header>
     <main>
       <div id="row-one">
@@ -90,15 +92,15 @@
             can be used for a variety of other things:
           </p>
           <p>
-            Free trials: When the trial expires, there will be no charges and
+            <strong>Free trials</strong>: When the trial expires, there will be no charges and
             the account will close itself.
           </p>
           <p>
-            In testing, programmers use fictitious credit card information to
+            <strong>In testing</strong>: Programmers use fictitious credit card information to
             check the functionality of e-commerce websites and other services.
           </p>
           <p>
-            Registration: A valid credit card number is required for some free
+            <strong>Registration</strong>: A valid credit card number is required for some free
             registrations. To obtain a legitimate number without giving out
             unneeded personal information, use our credit card generator.
           </p>
@@ -108,7 +110,7 @@
     </main>
     <footer>
       <div id="bottom-logo-container">
-        <a href="index.html"
+        <a href="index"
           ><img
             src="images/logo_bottom.png"
             alt="Logo"
@@ -121,11 +123,12 @@
         <nav class="bottom-menu">
           <div class="bottom-menu-item"><a href="">Documentation</a></div>
           <div class="bottom-menu-item"><a href="">Support</a></div>
-          <div class="bottom-menu-item"><a href="/contact">Contact Us</a>
+          <div class="bottom-menu-item"><a href="">Contact Us</a>
         </nav>
       </div>
     </footer>
-        <script>
+    <script >
+
       function myFunction() {
          var element = document.body;
          element.classList.toggle("dark-mode");
