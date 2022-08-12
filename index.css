@@ -54,8 +54,7 @@ header {
     }
   
   body {
-    /*background: var(--background);*/
-    background: url("images/4880206.jpg");
+    background: var(--background);
     color: var(--foreground);
     overflow-x: hidden;
   }
