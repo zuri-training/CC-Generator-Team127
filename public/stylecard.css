@@ -467,6 +467,11 @@ border: none;
   top: 25px;
   right: 5px;
 }
+
+.download a {
+  color: white;
+  text-decoration: none;
+}
 /*footer*/
 footer {
   display: flex;

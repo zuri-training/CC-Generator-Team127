@@ -9,12 +9,12 @@ const handleErrors = (err) => {
   let errors = { firstName: '', lastName: '', email: '', password: '', date_of_birth: '' };
 
   // incorrect email
-  if (err.message === 'incorrect email') {
+  if (err.message === 'Unable to login') {
     errors.email = 'Invalid email or password';
   }
 
   // incorrect email
-  if (err.message === 'incorrect password') {
+  if (err.message === 'Unable to login') {
     errors.password = 'Invalid email pr password';
   }
   // duplicate email error
@@ -126,13 +126,11 @@ exports.howTo = (req, res) => {
 
 // Sending Email API
 exports.sendEmail = (req, res) => {
-    // (fname = req.body.fname),
-    // (lname = req.body.lname),
-    // (tel = req.body.tel),
-    (from = req.body.from),
-    (subject = req.body.subject),
-    (message = req.body.body);
-    console.log( from, subject, message);
+  // (fname = req.body.fname),
+  // (lname = req.body.lname),
+  // (tel = req.body.tel),
+  (from = req.body.from), (subject = req.body.subject), (message = req.body.body);
+  console.log(from, subject, message);
 
   // create reusable transporter object using the default SMTP transport
   const Transporter = nodemailer.createTransport({
