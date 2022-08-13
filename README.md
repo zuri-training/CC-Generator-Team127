@@ -21,4 +21,4 @@ npm run dev
 ```
 ### server
 
-PORT 8000
+PORT 7000
