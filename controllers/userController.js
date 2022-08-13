@@ -136,7 +136,6 @@ exports.sendEmail = (req, res) => {
     (from = req.body.from),
     (subject = req.body.subject),
     (message = req.body.body);
-    console.log( from, subject, message);
 
   // create reusable transporter object using the default SMTP transport
   const Transporter = nodemailer.createTransport({
@@ -163,7 +162,13 @@ exports.sendEmail = (req, res) => {
       console.log('Error ' + err);
       res.status(500).send('Something went wrong.');
     } else {
-      res.status(200).send('<h1>Email successfully!</h1>');
+      res.status(200).send(`
+      <h1>Email successfully!</h1>
+      <a href ="/">
+      <button id="login-button"> Home </button>
+      </a>
+      `),
+    
       console.log('Email sent successfully');
     }
   });

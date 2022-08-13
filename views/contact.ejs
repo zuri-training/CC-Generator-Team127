@@ -37,7 +37,7 @@
         <div id="row-one">
           <div id="row-one-left">
             <h1>Contact Form</h1>
-           <form action="/sendEmail" method="POST" autocomplete="on", enctype="multipart/form-data">
+           <form action="sendEmail" method="POST" autocomplete="on", enctype="multipart/form-data">
             <div>
             <label for="fname">First Name</label><br>
               <input type="text" name ="fname" id="fname" placeholder="Dave"><br>
@@ -62,12 +62,12 @@
               <label for="message">Message</label><br>
               <textarea name="message" id="" cols="33" rows="5" placeholder="Type Message"></textarea>
             </div>
-           </form>
+           
             <!-- Edit buttons below to include link -->
-              <button type="submit" id="btn">
+            <button type="submit" id="btn">
                 Send
-              </button>
-
+            </button>
+          </form>
             <div class="row-one-left-two">
               <img src="images/Frame 75.png" alt="">
           </div>
@@ -103,10 +103,7 @@
         <div id="bottom-menu-container">
           <nav class="bottom-menu">
             <div class="bottom-menu-item"><a href="use">Documentation</a></div>
-              <div class="bottom-menu-item"><a href="">Privacy Policy</a></div>
-                <div class="bottom-menu-item"><a href="">Cookie Policy</a></div>
-                <div class="bottom-menu-item"><a href="">Terms of Use</a></div>
-            <div class="bottom-menu-item"><a href="">Support</a></div>
+            <div class="bottom-menu-item"><a href="contact">Support</a></div>
             <div class="bottom-menu-item"><a href="contact">Contact Us</a>
           </nav>
         </div>
