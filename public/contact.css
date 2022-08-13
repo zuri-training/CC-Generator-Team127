@@ -22,24 +22,39 @@ header {
   justify-content: left;
   padding-top: 20px;
 }
-.dark-mode {
-  background-color: black;
-  color: black;
+:root {
+  --clr-light: #f9f9f7;
+  --clr-dark: #00332a;
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
 }
-.dark-mode > footer {
-  background-color: black;
+
+.darkmode {
+  --clr-light: #eeeeea;
+  --clr-dark: #080808;
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+  background: var(--clr-dark);
 }
-.dark-mode > main > #row-one > #row-one-left {
-  background-color: black;
-  color: white;
-}
-.dark-mode > header > #top-logo-container img {
-  background-image: url('img/logo_bottom1');
-}
-.btn-dark {
-  width: 70px;
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
   height: 30px;
-  border-radius: 20px;
+}
+
+body {
+  background: var(--background);
+  color: var(--background);
+  overflow-x: hidden;
 }
 #top-menu-container {
   width: 65%;
@@ -105,6 +120,7 @@ header .top-menu-item-get-started a:hover {
   justify-content: left;
   margin-top: 40px;
   background: white;
+  color: black;
   box-shadow: 0 0 20px rgba(162, 187, 202, 0.75);
 }
 #row-one-left > h1 {
@@ -122,7 +138,7 @@ header .top-menu-item-get-started a:hover {
 }
 input {
   height: 25px;
-  width: 250px;
+  width: 245px;
 }
 input::placeholder {
   font-style: italic;

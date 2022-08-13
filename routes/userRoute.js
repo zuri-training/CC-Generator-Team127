@@ -17,6 +17,13 @@ userRoute.get('/library', controller.library);
 userRoute.post('/sendEmail', controller.sendEmail);
 
 userRoute.get('/download1', controller.downloadpage1);
+userRoute.get('/download2', controller.downloadpage2);
+userRoute.get('/download3', controller.downloadpage3);
+userRoute.get('/download4', controller.downloadpage4);
+userRoute.get('/download5', controller.downloadpage5);
+userRoute.get('/download6', controller.downloadpage6);
+userRoute.get('/download7', controller.downloadpage7);
+userRoute.get('/download8', controller.downloadpage8);
 
 // index API route
 userRoute.get('/index', controller.index);

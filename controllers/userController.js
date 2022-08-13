@@ -94,6 +94,30 @@ exports.downloadpage1 = (req, res) => {
   res.status(200).render('downloadpage1');
 };
 
+exports.downloadpage2 = (req, res) => {
+  res.status(200).render('downloadpage2');
+};
+exports.downloadpage3 = (req, res) => {
+  res.status(200).render('downloadpage3');
+};
+exports.downloadpage4 = (req, res) => {
+  res.status(200).render('downloadpage4');
+};
+
+exports.downloadpage5 = (req, res) => {
+  res.status(200).render('downloadpage5');
+};
+
+exports.downloadpage6 = (req, res) => {
+  res.status(200).render('downloadpage6');
+};
+exports.downloadpage7 = (req, res) => {
+  res.status(200).render('downloadpage7');
+};
+exports.downloadpage8 = (req, res) => {
+  res.status(200).render('downloadpage8');
+};
+
 // Sending Email API
 exports.sendEmail = (req, res) => {
   (fname = req.body.fname),
