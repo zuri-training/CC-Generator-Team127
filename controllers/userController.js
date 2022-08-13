@@ -124,13 +124,16 @@ exports.howTo = (req, res) => {
   res.status(200).render('use');
 };
 
+exports.developer = (req, res) => {
+  res.status(200).render('develop-center');
+};
+
 // Sending Email API
 exports.sendEmail = (req, res) => {
   // (fname = req.body.fname),
   // (lname = req.body.lname),
   // (tel = req.body.tel),
   (from = req.body.from), (subject = req.body.subject), (message = req.body.body);
-  console.log(from, subject, message);
 
   // create reusable transporter object using the default SMTP transport
   const Transporter = nodemailer.createTransport({
@@ -157,8 +160,13 @@ exports.sendEmail = (req, res) => {
       console.log('Error ' + err);
       res.status(500).send('Something went wrong.');
     } else {
-      res.status(200).send('<h1>Email successfully!</h1>');
-      console.log('Email sent successfully');
+      res.status(200).send(`
+      <h1>Email successfully!</h1>
+      <a href ="/">
+      <button id="login-button"> Home </button>
+      </a>
+      `),
+        console.log('Email sent successfully');
     }
   });
 };
