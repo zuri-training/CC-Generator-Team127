@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+/*HEADER*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#top-logo-container {
+  width: 25%;
+  display: flex;
+  justify-content: left;
+  padding-top: 20px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode > #top-logo-container > img {
+  background-image: url('img/logo_bottom1');
+}
+.dark-mode > footer {
+  background-color: black;
+}
+.btn-dark {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+}
+#top-menu-container {
+  width: 65%;
+  display: flex;
+  justify-content: right;
+  padding-top: 20px;
+}
+
+header .top-menu {
+  display: flex;
+  position: relative;
+}
+
+header .top-menu-item {
+  padding-left: 40px;
+}
+
+header .top-menu-item a {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6c757d;
+}
+
+header .top-menu-item a:hover {
+  color: #0d47a1;
+}
+
+header .top-menu-item-home a {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2196f3;
+}
+
+header .top-menu-item-home a:hover {
+  color: #0d47a1;
+}
+
+header .top-menu-item-get-started a {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6c757d;
+  border: 2px solid #6c757d;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+header .top-menu-item-get-started a:hover {
+  color: #0d47a1;
+  background-color: #e9ecef;
+}
+
+.section-class {
+  /* padding-left: 4rem; */
+  padding-top: 2rem;
+}
+
+.align {
+  text-align: center;
+  /* background-color: #0d47a1; */
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.color {
+  background: #ffffff;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.center {
+  /* text-align: left; */
+  margin: auto;
+}
+
+.extra {
+  padding: 2rem 1.5rem;
+}
+
+.middle {
+  text-align: center;
+  padding-top: 2rem;
+  background: #ffffff;
+  /* 2xl */
+
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+.but {
+  margin-top: 0.4rem;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.padding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.theme {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 180%;
+  /* or 86px */
+
+  letter-spacing: 0.015em;
+
+  /* Primary/Primary800 */
+
+  color: #1976d2;
+}
+p {
+  font-size: 24px;
+  line-height: 180%;
+}
+
+/* buttons */
+.button-seeker {
+  padding: 1rem 1.5rem;
+  /* height: 2rem; */
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #1565c0;
+  color: #ffffff;
+}
+
+.button-learn {
+  padding: 24px 32px;
+  width: 150px;
+  /* height: 91px; */
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.button-getstarted {
+  padding: 24px 32px;
+  width: 194px;
+  /* height: 50px; */
+  cursor: pointer;
+  /* Primary/Primary800 */
+  background: #1976d2;
+  border-color: transparent;
+  border-radius: 8px;
+}
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1565c0;
+}
+
+#bottom-logo-container {
+  width: 25%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#bottom-menu-container {
+  width: 65%;
+  display: flex;
+  justify-content: right;
+  margin-top: 60px;
+}
+
+footer .bottom-menu-item a {
+  font-family: 'Vollkorn', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px;
+  color: #e3f2fd;
+}
+
+footer .bottom-menu-item a:hover {
+  color: #e1b713;
+}
+
+footer .bottom-menu {
+  display: flex;
+}
+
+@media (max-width: 560px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
