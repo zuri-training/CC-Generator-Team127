@@ -1,3 +1,4 @@
+const express = require('express');
 const User = require('../model/user.js');
 const nodemailer = require('nodeMailer');
 require('dotenv').config();
@@ -35,7 +36,7 @@ const handleErrors = (err) => {
   return errors;
 };
 
-// signin API
+// signIn API
 exports.signin = async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -114,18 +115,24 @@ exports.downloadpage6 = (req, res) => {
 exports.downloadpage7 = (req, res) => {
   res.status(200).render('downloadpage7');
 };
+
 exports.downloadpage8 = (req, res) => {
   res.status(200).render('downloadpage8');
 };
 
+exports.howTo = (req, res) => {
+  res.status(200).render('use');
+};
+
 // Sending Email API
 exports.sendEmail = (req, res) => {
-  (fname = req.body.fname),
-    (lname = req.body.lname),
-    (tel = req.body.tel),
+    // (fname = req.body.fname),
+    // (lname = req.body.lname),
+    // (tel = req.body.tel),
     (from = req.body.from),
     (subject = req.body.subject),
     (message = req.body.body);
+    console.log( from, subject, message);
 
   // create reusable transporter object using the default SMTP transport
   const Transporter = nodemailer.createTransport({
@@ -140,7 +147,7 @@ exports.sendEmail = (req, res) => {
   // send mail with defined transport object
   let mailOptions = {
     from: `${from}`, // list of sender
-    to: 'cc_team127@gmail.com', // list of receivers
+    to: process.env.to, // list of receivers
     subject: `${subject}`, // Subject line
     text: `${message}`, // plain text body
     // html: "<b>Hello world?</b>", // html body

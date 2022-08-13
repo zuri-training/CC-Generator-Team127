@@ -2,6 +2,9 @@ const express = require('express');
 const userRoute = express.Router();
 const controller = require('../controllers/userController');
 
+// how-to-use
+userRoute.get('/use', controller.howTo);
+
 // signup API route
 userRoute.post('/signup', controller.signup);
 userRoute.get('/signup', controller.signUp);
@@ -16,6 +19,7 @@ userRoute.get('/library', controller.library);
 // sendEmail API route
 userRoute.post('/sendEmail', controller.sendEmail);
 
+// Show more cards
 userRoute.get('/download1', controller.downloadpage1);
 userRoute.get('/download2', controller.downloadpage2);
 userRoute.get('/download3', controller.downloadpage3);

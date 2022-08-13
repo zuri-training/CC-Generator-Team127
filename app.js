@@ -4,7 +4,7 @@ require('dotenv').config();
 const userRoute = require('./routes/userRoute');
 
 // connect to the database
-mongoose.connect('mongodb://localhost/cardify-backend');
+mongoose.connect(process.env.dB_URI);
 
 // initialize your express app
 const app = express();

@@ -37,38 +37,36 @@
         <div id="row-one">
           <div id="row-one-left">
             <h1>Contact Form</h1>
-           <form action="">
+           <form action="/sendEmail" method="POST" autocomplete="on", enctype="multipart/form-data">
             <div>
             <label for="fname">First Name</label><br>
-              <input type="text" name="fname" id="fname" placeholder="Dave"><br>
+              <input type="text" name ="fname" id="fname" placeholder="Dave"><br>
             </div>
 
             <div>
               <label for="lname">Last Name</label><br>
-              <input type="text" name="fname" id="lname" placeholder="Smith">
+              <input type="text" name ="fname" id="lname" placeholder="Smith">
             </div>
 
             <div>
               <label for="email">Email Address</label><br>
-              <input type="email" name="email" id="email" placeholder="Davesmith@gmail.com">
+              <input type="email" name ="email" id="email" placeholder="Davesmith@gmail.com">
             </div>
 
             <div>
               <label for="tel">Phone Number</label><br>
-              <input type="tel" name="tel" id="tel" placeholder="+234 000 3345 678" minlength="7" maxlength="13">
+              <input type="tel" name ="tel" id="tel" placeholder="+234 000 3345 678" minlength="7" maxlength="13">
             </div>
 
             <div>
               <label for="message">Message</label><br>
-              <textarea name="" id="" cols="33" rows="5" placeholder="Type Message"></textarea>
+              <textarea name="message" id="" cols="33" rows="5" placeholder="Type Message"></textarea>
             </div>
            </form>
             <!-- Edit buttons below to include link -->
-            <a href=""
-              ><button id="btn">
+              <button type="submit" id="btn">
                 Send
-              </button></a
-            >
+              </button>
 
             <div class="row-one-left-two">
               <img src="images/Frame 75.png" alt="">
