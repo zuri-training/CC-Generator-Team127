@@ -124,6 +124,10 @@ exports.howTo = (req, res) => {
   res.status(200).render('use');
 };
 
+exports.developer =(req, res) => {
+  res.status(200).render('develop-center')
+};
+
 // Sending Email API
 exports.sendEmail = (req, res) => {
     // (fname = req.body.fname),

@@ -29,6 +29,9 @@ userRoute.get('/download6', controller.downloadpage6);
 userRoute.get('/download7', controller.downloadpage7);
 userRoute.get('/download8', controller.downloadpage8);
 
+// developer center
+userRoute.get('/developer', controller.developer);
+
 // index API route
 userRoute.get('/index', controller.index);
 userRoute.get('/', controller.index);
