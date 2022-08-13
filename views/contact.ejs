@@ -10,16 +10,22 @@
 <body>
     <header>
         <div id="top-logo-container">
-          <a href="index.html">
-            <img src="images/logo_top.png" alt="Logo" height="80px" width="187.28"/>
-          </a>
+          <a href="index"
+            ><img
+              src="images/logo_top2.png"
+              alt="Logo"
+              height="80px"
+              width="187.28"
+          /></a>
         </div>
         <!--Insert links for menu items below-->
         <div id="top-menu-container">
-        <button class="btn-dark" onclick="myFunction()">Dark mode</button>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+        </button>
           <nav class="top-menu">
-            <div class="top-menu-item"><a href="/">Home</a></div>
-            <div class="top-menu-item"><a href="library">Library</a></div>
+            <div class="top-menu-item"><a href="index">Home</a></div>
+            <div class="top-menu-item"><a href="cards">Library</a></div>
             <div class="top-menu-item"><a href="about">About Us</a></div>
             <div class="top-menu-item-get-started"><a href="signup">Get Started</a></div>
             <div class="top-menu-item"><a href="signin">Sign In</a></div>
@@ -31,54 +37,51 @@
         <div id="row-one">
           <div id="row-one-left">
             <h1>Contact Form</h1>
-            <form autocomplete="off" action="/sendEmail" method="POST" enctype="application/x-www-form-urlencoded">
-              <div>
-                <label for="fname">First Name</label><br>
-                <input type="text" name="fname" id="fname" placeholder="Enter your first name" required><br>
-              </div>
+           <form action="">
+            <div>
+            <label for="fname">First Name</label><br>
+              <input type="text" name="fname" id="fname" placeholder="Dave"><br>
+            </div>
 
-              <div>
-                <label for="lname">Last Name</label><br>
-                <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
-              </div>
+            <div>
+              <label for="lname">Last Name</label><br>
+              <input type="text" name="fname" id="lname" placeholder="Smith">
+            </div>
 
-              <div>
-                <label for="email">Email Address</label><br>
-                <input type="email" name="from" id="email" required placeholder="Davesmith@gmail.com" required></input>
-              </div>
+            <div>
+              <label for="email">Email Address</label><br>
+              <input type="email" name="email" id="email" placeholder="Davesmith@gmail.com">
+            </div>
 
-              <div>
-                <label for="subject">Subject</label><br>
-                <input type="text" name="subject" id="sub" placeholder="Subject:" required>
-              </div>
+            <div>
+              <label for="tel">Phone Number</label><br>
+              <input type="tel" name="tel" id="tel" placeholder="+234 000 3345 678" minlength="7" maxlength="13">
+            </div>
 
-              <div>
-                <label for="tel">Phone Number</label><br>
-                <input type="tel" name="tel" id="tel" placeholder="+234 000 3345 678" minlength="7" maxlength="13">
-              </div>
+            <div>
+              <label for="message">Message</label><br>
+              <textarea name="" id="" cols="33" rows="5" placeholder="Type Message"></textarea>
+            </div>
+           </form>
+            <!-- Edit buttons below to include link -->
+            <a href=""
+              ><button id="btn">
+                Send
+              </button></a
+            >
 
-              <div>
-                <label for="message">Message</label><br>
-                <textarea name="body" cols='32' rows='10' id="message" placeholder="Type Message"></textarea>
-              </div>
-           
-              <!-- Edit buttons below to include link -->
-             <button type="submit" id="btn"> Send </button>
-
-              <div class="row-one-left-two">
-                <img src="images/Frame 75.png" alt="">
-              </div>
-            </form>
+            <div class="row-one-left-two">
+              <img src="images/Frame 75.png" alt="">
           </div>
-          
+          </div>
 
           <div id="row-one-right">
             <img
               id="credit-cards-stack"
               src="images/rafiki.png"
               alt="Stack of Credit Cards"
-              height="454px"
-              width="413px"
+              height="460px"
+              width="618px"
             />
           </div>
 
@@ -90,7 +93,7 @@
       </main>
       <footer>
         <div id="bottom-logo-container">
-          <a href="index.html"
+          <a href="index"
             ><img
               src="images/logo_bottom.png"
               alt="Logo"
@@ -101,18 +104,16 @@
         <!--Insert links for menu items below-->
         <div id="bottom-menu-container">
           <nav class="bottom-menu">
-            <div class="bottom-menu-item"><a href="">Documentation</a></div>
+            <div class="bottom-menu-item"><a href="use">Documentation</a></div>
+              <div class="bottom-menu-item"><a href="">Privacy Policy</a></div>
+                <div class="bottom-menu-item"><a href="">Cookie Policy</a></div>
+                <div class="bottom-menu-item"><a href="">Terms of Use</a></div>
             <div class="bottom-menu-item"><a href="">Support</a></div>
-            <div class="bottom-menu-item"><a href="/contact">Contact Us</a>
+            <div class="bottom-menu-item"><a href="contact">Contact Us</a>
           </nav>
         </div>
       </footer>
-         <script>
-      function myFunction() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
-      }
-      </script>
+          <script src="index.js"></script>
 </body>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </html>
