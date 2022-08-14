@@ -5,13 +5,12 @@ name: Node.js Package
 
 on: 
   push
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+    - main
     
 jobs:
   build:
-
+    name: deploy to staging
     run-on: ubuntu-latest
     
     strategy:
@@ -21,11 +20,20 @@ jobs:
     steps:
       # - run: node --version
       # - run: npm --version
-      - uses: actions/checkout@v3
+      # - uses: actions/checkout@v3
       - name: Use app.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      
+      - name: Install Dependencies
       - run: npm install
+      
+      - name: EJS Action
+        uses: yogonza524/ejs-action@v1.3
+        with:
+          # Output file path (with filename and extension)
+          fileOutput: ./views/index.ejs
+      - run: npm install.ejs
       - run: npm run build --if-present
       - run: node app.js
