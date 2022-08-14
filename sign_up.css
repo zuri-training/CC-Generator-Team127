@@ -258,6 +258,9 @@ footer .bottom-menu {
 /*RESPONSIVE MODE*/
 
 @media screen and (max-width: 720px) {
+  
+  /*HEADER*/
+  
   header {
     display: flex;
     flex-direction: row;
