@@ -3,8 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+
+    <title>Credit card</title>
   </head>
-  <body></body>
+  <body>
+    <div class="comment section">
+      <h2>comments Section</h2>
+      <% if (comments.length > 0) { %> <% comments.forEach(comment => {%>
+      <h3>Name: <%= user.firstName %></h3>
+      <a>
+        <p class="message">comment: <%= comment.message %></p>
+      </a>
+      <% }) %> <% } else { %>
+      <p>nothing dey</p>
+      <% } %>
+    </div>
+  </body>
 </html>

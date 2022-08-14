@@ -92,7 +92,21 @@ header nav .top-menu-get-started a:hover {
   width: 30px;
   height: 30px;
 }
+/* 
+.btn-dark {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
+.dark-mode {
+  background-color: black;
+  color: #ffff;
+}
+.dark-mode > footer {
+  background-color: navy;
+} */
 /*FIRST ROW*/
 
 #row-one {

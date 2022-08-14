@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylecard.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecard.css">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Credit Card</title>
-  </head>
-  <body>
-    <%- include('./partials/header')%>
+</head>
+<body>
+   
+   <header>
+    <div id="top-logo-container">
+      <a href="index"
+        ><img
+          src="images/logo_top2.png"
+          alt="Logo"
+          height="80px"
+          width="187px"
+      /></a>
+    </div>
+    <!--Insert links for menu items below-->
+    <div id="top-menu-container">
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+        </button>
+      <nav class="top-menu">
+        <div class="top-menu-item-home"><a href="index">Home</a></div>
+         <div class="top-menu-item"><a href="library">Library</a></div>
+        <div class="top-menu-item"><a href="about">About Us</a></div>
+
+      </nav>
+    </div>
+  </header>
+
+
     <div class="card">
       <div class="front">
-        <img src="images/Gradient 5.png" alt="card front" />
-      </div>
+        <img src="images/Gradient 5.png" alt="card front">
+    </div>
 
-      <div class="back">
-        <img src="images/Gradient 5back.png" alt="" />
-      </div>
+<div class="back">
+    <img src="images/Gradient 5back.png" alt="">
+    </div>
     </div>
 
     <button class="download"><a href="images/Gradient 5.png" download> download </a></button>
-    <!-- <select name="cars" id="cars">
-        <option value="download">Downloaders</option>
-        <a href="images/Geometric 6.png" download> <option value="jpg"></option></a>
+<!--     
+    <button class="download">
+      <select name="cars" id="cars">
+        <option value="download">Download</option>
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
         <option value="pdf">PDF</option>
-        <option value="zip">Allformat.zip</option>
+           <option value="zip">Allformat.zip</option>
       </select> -->
-
-    <div class="container">
+      <button ></button>
+    </button>
+ <div class="container">
       <div class="wrapper">
         <button class="btn btn-like">
           <span class="btn-icon btn--icon-default">
@@ -118,28 +147,21 @@
         <img src="images/Save button.png" alt="" />
       </button>
       <!--<span class="iconify" id="save" data-icon="ci:download" data-width="35"></span>-->
+       <div class="create-blog content">
+      <form action="/download1" method="POST">
+        <!-- <label for="name">Name :</label>
+        <input name="name" type="text" id="title" required /> -->
+        <!-- <label for="snippet">Blog snippet:</label>
+        <input type="text" id="snippet" name="snippet" required /> -->
+        <label for="body">Your comment:</label>
+        <textarea name="message" id="body" name="body" required></textarea>
+        <button>Submit</button>
+      </form>
     </div>
-    <!-- <footer>
-    <div id="bottom-logo-container">
-      <a href="index.html"
-        ><img
-          src="images/logo_bottom.png"
-          alt="Logo"
-          height="80px"
-          width="187"
-      /></a>
     </div>
-    Insert links for menu items below
-    <div id="bottom-menu-container">
-      <nav class="bottom-menu">
-        <div class="bottom-menu-item"><a href="">Documentation</a></div>
-        <div class="bottom-menu-item"><a href="">Supporters</a></div>
-        <div class="bottom-menu-item"><a href="contact.html">Contact Us</a>
-      </nav>
-    </div>
-  </footer> -->
+
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
   </body>
+</body>
 </html>
-download1

@@ -15,7 +15,11 @@
   </head>
   <body>
     <div class="container">
-      <%- include('./partials/header')%>
+      <%- include('./partials/header')%> <% if (user) { %>
+      <div class="welcome">
+        <p>welcome <%= user.firstName %></p>
+      </div>
+      <% } %>
 
       <div class="main-title">
         <p class="browse">
@@ -85,5 +89,6 @@
         </nav>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

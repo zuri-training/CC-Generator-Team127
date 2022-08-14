@@ -71,6 +71,28 @@ header nav .top-menu-get-started a:hover {
   background-color: #e9ecef;
 }
 
+.darkmode {
+  --clr-light: #eeeeea;
+  --clr-dark: #080808;
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+  background: var(--clr-dark);
+}
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
 /*GENERAL*/
 
 h2 {
