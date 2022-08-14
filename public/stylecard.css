@@ -512,9 +512,9 @@ footer .bottom-menu {
 }
 
 /*media queries for small screens*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   body {
-    overflow-x: hidden;
+      overflow-x: hidden;
   }
   header {
     display: flex;
@@ -561,45 +561,47 @@ footer .bottom-menu {
     margin-left: 5px;
   }
 
-  .card img {
-    height: 230px;
-    width: auto;
+    .card img 
+    {
+  height: 230px;
+        width: auto;
   }
-
-  .cards {
-    position: relative;
-    top: 50px;
-  }
-  .front {
-    position: relative;
-    right: 100px;
-  }
-  .back {
-    position: relative;
-    bottom: 270px;
-    left: 100px;
-  }
+ 
+ .cards {
+ position: relative;
+ top: 50px;
+}
+.front {
+  position: relative;
+  right: 100px;
+}
+.back {
+  position: relative;
+  bottom: 255px;
+  left: 100px;
+}
   .download {
-    position: absolute;
-    left: 2%;
-    bottom: 49%;
-  }
-  .container {
-    max-width: 50%;
-    position: relative;
-    bottom: 15rem;
-    left: 22%;
-  }
-  .share-options {
-    position: absolute;
-    margin-top: 50px;
-    left: 3%;
-  }
+      position: absolute;
+      left: 2%;
+      bottom: 49%;
+      
+  } 
+ .container {
+ max-width: 50%;
+  position: relative;
+bottom: 15rem;
+     left: 29%
+ }
+.share-options{
+  position: absolute;
+  margin-top: 50px;
+left: 3%;
+}
 }
 
-@media screen and (min-width: 1500px) {
+@media (max-width: 750px) and (min-width: 450px) {
   body {
-    overflow-x: hidden;
+      overflow-x: hidden;  
   }
   header {
     display: flex;
@@ -609,8 +611,8 @@ footer .bottom-menu {
 
   #top-logo-container {
     width: 25%;
-    display: flex;
-    justify-content: left;
+      display: flex;
+      justify-content: left;
     padding-top: 20px;
   }
 
@@ -624,6 +626,7 @@ footer .bottom-menu {
     display: flex;
     justify-content: left;
     padding-top: 15px;
+  
   }
 
   header .top-menu-item {
@@ -646,45 +649,74 @@ footer .bottom-menu {
     margin-left: 5px;
   }
 
-  .card img {
-    height: 230px;
-    width: auto;
+    .card img 
+    {
+  height: 230px;
+        width: auto;
   }
-
-  .cards {
-    position: relative;
-    top: 50px;
-  }
-  .front {
-    position: relative;
-    right: 70px;
-  }
-  .back {
-    position: relative;
-    bottom: 270px;
-    left: 70px;
-  }
-  .download {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 30px;
-    border: none;
-    background: blue;
-    position: relative;
-    bottom: 17rem;
-    left: 70%;
-  }
-  .container {
-    max-width: 50%;
-    position: relative;
-    bottom: 15rem;
-    left: 22%;
-  }
-  .share-options {
-    position: absolute;
-    margin-top: 50px;
-    left: 3%;
-  }
+ 
+ .cards {
+ position: relative;
+ top: 50px;
+   
 }
+.front {
+  position: relative;
+  right: 120px;
+}
+.back {
+  position: relative;
+  bottom: 252px;
+  left: 120px;
+}
+  .download {
+        display: flex;
+justify-content: center;
+align-items: center;
+width: 100px;
+height: 30px;
+border: none;
+background: blue;
+position: relative;
+bottom: 17rem;
+left: 72%;
+      
+  }
+ .container {
+ max-width: 50%;
+  position: relative;
+bottom: 15rem;
+     left: 22%
+ }
+.share-options{
+  position: absolute;
+  margin-top: 50px;
+left: 3%;
+}
+}
+
+@media (max-width: 1200px) and (min-width: 751px) {
+    
+.front {
+  position: relative;
+  right: 120px;
+}
+.back {
+  position: relative;
+  bottom: 252px;
+  left: 120px;
+}
+  .download {
+position: relative;
+bottom: 30rem;
+left: 82%;
+}
+.share-options{
+  position: absolute;
+  margin-top: 50px;
+left: 2%;
+}
+}
+  
+  
+  
