@@ -2,62 +2,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
 
 * {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top-logo-container {
+  margin-right: auto;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+#top-menu-container {
+  display: flex;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+header nav a {
+  padding: 0 15px;
   font-family: 'Ubuntu', sans-serif;
-}
-
-.container {
-  margin: 20px 60px;
-}
-
-header,
-footer {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.dark-mode {
-  background-color: black;
-  color: black;
-}
-
-.btn-dark {
-  width: 70px;
-  height: 30px;
-  border-radius: 20px;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-header a {
-  text-decoration: none;
-  color: gray;
+  font-style: normal;
+  font-weight: 400;
   font-size: 24px;
-  padding: 10px;
-  margin-left: 40px;
+  color: #adb5bd;
 }
 
-header a:hover {
+header nav a:hover {
+  color: #0d47a1;
+}
+
+header nav .top-menu-home a {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
   color: #2196f3;
 }
 
-.start {
-  border: 1px solid gray;
+header nav .top-menu-home a:hover {
+  color: #0d47a1;
+}
+
+header nav .top-menu-get-started a {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #adb5bd;
+  border: 2px solid #adb5bd;
   padding: 10px;
-  display: flex;
-  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.start:hover {
-  border: 1px solid #2196f3;
+header nav .top-menu-get-started a:hover {
+  color: #0d47a1;
+  background-color: #e9ecef;
 }
 
+.darkmode {
+  --clr-light: #eeeeea;
+  --clr-dark: #080808;
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+  background: var(--clr-dark);
+}
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
 /* .browse {
     color: black;
     font-weight: bold;
@@ -133,6 +165,13 @@ header a:hover {
   border-radius: 25px;
   transform: scale(1.01);
   transition: ease-in-out 160ms;
+}
+
+.welcome {
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  color: #1565c0;
+  font-size: 2rem;
 }
 
 .title-txt {

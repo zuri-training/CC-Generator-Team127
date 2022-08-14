@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const userRoute = require('./routes/userRoute');
+const commentRoute = require('./routes/commentRoute');
 const cookieParser = require('cookie-parser');
 const { checkUser } = require('./middleware/auth');
 
@@ -22,9 +23,10 @@ app.set('view engine', 'ejs');
 
 // routes
 app.get('*', checkUser);
-app.use('/', userRoute);
-userRoute.post('/sendEmail', userRoute);
 
+userRoute.post('/sendEmail', userRoute);
+app.use('/', userRoute);
+app.use('/', commentRoute);
 // assign a port
 port = process.env.PORT || 7000;
 
