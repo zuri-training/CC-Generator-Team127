@@ -1,7 +1,6 @@
-const express = require('express');
 const User = require('../model/user.js');
 const nodemailer = require('nodeMailer');
-require('dotenv').config();
+const jwt = require('jsonwebtoken');
 
 // handle errors
 const handleErrors = (err) => {
@@ -9,12 +8,12 @@ const handleErrors = (err) => {
   let errors = { firstName: '', lastName: '', email: '', password: '', date_of_birth: '' };
 
   // incorrect email
-  if (err.message === 'incorrect email') {
+  if (err.message === 'Unable to login') {
     errors.email = 'Invalid email or password';
   }
 
   // incorrect email
-  if (err.message === 'incorrect password') {
+  if (err.message === 'Unable to login') {
     errors.password = 'Invalid email pr password';
   }
   // duplicate email error
@@ -36,36 +35,82 @@ const handleErrors = (err) => {
   return errors;
 };
 
+// creates json web token
+
+const maxAge = 3 * 24 * 60 * 60;
+const createToken = (id) => {
+  return jwt.sign({ id }, process.env.JWT_SECRET, {
+    expiresIn: maxAge,
+  });
+};
+
 // signIn API
+
 exports.signin = async (req, res) => {
   const { email, password } = req.body;
+
+  console.log(email, password);
   try {
-    const user = await User.findByCredentials(email, password);
-    const token = await user.generateAuthToken();
-    res.send({ user, token });
+    const user = await User.login(email, password);
+    const token = createToken(user._id);
+    res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
+    res.status(200).json({ user: user._id, token });
   } catch (error) {
     const errors = handleErrors(error);
     res.status(400).json({ errors });
-    // res.status(400).send(error);
+  }
+  // res.send("user login");
+};
+// exports.signin = async (req, res) => {
+//   const { email, password } = req.body;
+//   try {
+//     const user = await User.findByCredentials(email, password);
+//     const token = await user.generateAuthToken();
+//     res.send({ user, token });
+//   } catch (error) {
+//     const errors = handleErrors(error);
+//     res.status(400).json({ errors });
+//     // res.status(400).send(error);
+//   }
+// };
+
+// signup API
+
+exports.signup = async (req, res) => {
+  const { firstName, lastName, email, password, date_of_birth } = req.body;
+  try {
+    const user = await User.create({ firstName, lastName, email, password, date_of_birth });
+    const token = createToken(user._id);
+    res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
+    res.status(201).json({ user: user._id });
+  } catch (err) {
+    const errors = handleErrors(err);
+    res.status(400).json({ errors });
+    // res.status(400).json(err);
   }
 };
 
-// signup API
-exports.signup = async (req, res) => {
-  const { firstName, lastName, email, password, date_of_birth } = req.body;
-  const user = new User({ firstName, lastName, email, password, date_of_birth });
-  try {
-    // save the user in the database
-    await user.save();
-    // generate token which will be used to check authenticated users
-    const token = await user.generateAuthToken();
-    res.status(201).send({ user, token });
-  } catch (error) {
-    const errors = handleErrors(error);
-    res.status(400).json({ errors });
-    // res.status(400).send(error);
-  }
-};
+// module.exports.logout_get = (req, res) => {
+//   res.cookie('jwt', '', { maxAge: 1 });
+//   res.redirect('/');
+//   // res.send("hello");
+// };
+
+// exports.signup = async (req, res) => {
+//   const { firstName, lastName, email, password, date_of_birth } = req.body;
+//   const user = new User({ firstName, lastName, email, password, date_of_birth });
+//   try {
+//     // save the user in the database
+//     await user.save();
+//     // generate token which will be used to check authenticated users
+//     const token = await user.generateAuthToken();
+//     res.status(201).send({ user, token });
+//   } catch (error) {
+//     const errors = handleErrors(error);
+//     res.status(400).json({ errors });
+//     // res.status(400).send(error);
+//   }
+// };
 
 // routes API
 exports.library = (req, res) => {
@@ -92,6 +137,7 @@ exports.signIn = (req, res) => {
 };
 
 exports.downloadpage1 = (req, res) => {
+  // console.log(req.headers);
   res.status(200).render('downloadpage1');
 };
 
@@ -124,18 +170,16 @@ exports.howTo = (req, res) => {
   res.status(200).render('use');
 };
 
-exports.developer =(req, res) => {
-  res.status(200).render('develop-center')
+exports.developer = (req, res) => {
+  res.status(200).render('develop-center');
 };
 
 // Sending Email API
 exports.sendEmail = (req, res) => {
-    // (fname = req.body.fname),
-    // (lname = req.body.lname),
-    // (tel = req.body.tel),
-    (from = req.body.from),
-    (subject = req.body.subject),
-    (message = req.body.body);
+  // (fname = req.body.fname),
+  // (lname = req.body.lname),
+  // (tel = req.body.tel),
+  (from = req.body.from), (subject = req.body.subject), (message = req.body.body);
 
   // create reusable transporter object using the default SMTP transport
   const Transporter = nodemailer.createTransport({
@@ -168,8 +212,7 @@ exports.sendEmail = (req, res) => {
       <button id="login-button"> Home </button>
       </a>
       `),
-    
-      console.log('Email sent successfully');
+        console.log('Email sent successfully');
     }
   });
 };

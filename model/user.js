@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema(
   {
@@ -43,38 +42,33 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-userSchema.methods.generateAuthToken = async function () {
-  const user = this;
-  // generate a token
-  const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET || 'secretcode', { expiresIn: '10d' });
-  return token;
-};
-
-userSchema.statics.findByCredentials = async (email, password) => {
-  // checks if the email exists in the database
-  const user = await User.findOne({ email });
-
-  // if the email doesn't exist
-  if (!user) {
-    throw new Error('Unable to login');
-  }
-
-  const isMatch = await bcrypt.compare(password, user.password);
-
-  if (!isMatch) {
-    throw new Error('Unable to login');
-  }
-  return user;
-};
-
-// hash the plain text password before saving to the database
+// userSchema.methods.generateAuthToken = async function () {
+//   const user = this;
+//   // generate a token
+//   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET || 'secretcode', { expiresIn: '10d' });
+//   return token;
+// };
+// fires a function before doc saved to the DB
 userSchema.pre('save', async function (next) {
-  const user = this;
-  if (user.isModified('password')) {
-    user.password = await bcrypt.hash(user.password, 8);
-  }
+  const salt = await bcrypt.genSalt();
+  this.password = await bcrypt.hash(this.password, salt);
   next();
 });
+// console.log("new user was created and saved", doc);
+// static method to login user
+
+userSchema.statics.login = async function (email, password) {
+  const user = await this.findOne({ email });
+
+  if (user) {
+    const auth = await bcrypt.compare(password, user.password);
+    if (auth) {
+      return user;
+    }
+    throw Error('Unable to login');
+  }
+  throw Error('Unable to login');
+};
 
 const User = mongoose.model('User', userSchema);
 
