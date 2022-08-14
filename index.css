@@ -73,6 +73,11 @@ header nav .top-menu-get-started a:hover {
 
 /*FIRST ROW*/
 
+#row-one-center img[src="images/design_home_row1.svg"] {
+margin-bottom: -219px;
+margin-left: -104px;
+}
+
 #row-one {
   display: flex;
   flex-direction: row;
@@ -133,6 +138,12 @@ main .row-one-paragraph {
 
 /*SECOND ROW*/
 
+#row-two-design-container img[src="images/design_home_row2.svg"] {
+  margin-left: -140px;
+  margin-bottom: -25px;
+  margin-left: ;
+  }
+
 #row-two {
   display: flex;
   flex-direction: row;
@@ -190,6 +201,14 @@ hr {
 
 /*THIRD ROW*/
 
+#row-three-right-design-container img {
+  margin-left: -20px;
+  }
+
+  .row-three-bullet {
+    margin-left: -20px;
+  }
+  
 #row-three {
   display: flex;
   flex-direction: row;
