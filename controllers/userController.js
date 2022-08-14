@@ -15,7 +15,7 @@ const handleErrors = (err) => {
 
   // incorrect email
   if (err.message === 'Unable to login') {
-    errors.password = 'Invalid email pr password';
+    errors.password = 'Invalid email or password';
   }
   // duplicate email error
   if (err.code === 11000) {
@@ -91,11 +91,11 @@ exports.signup = async (req, res) => {
   }
 };
 
-// module.exports.logout_get = (req, res) => {
-//   res.cookie('jwt', '', { maxAge: 1 });
-//   res.redirect('/');
-//   // res.send("hello");
-// };
+module.exports.logout_get = (req, res) => {
+  res.cookie('jwt', '', { maxAge: 1 });
+  res.redirect('/');
+  // res.send("hello");
+};
 
 // exports.signup = async (req, res) => {
 //   const { firstName, lastName, email, password, date_of_birth } = req.body;

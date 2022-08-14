@@ -43,4 +43,5 @@ userRoute.get('/about', controller.about);
 // contact-us API route
 userRoute.get('/contact', controller.contact);
 
+userRoute.get('/logout', controller.logout_get);
 module.exports = userRoute;

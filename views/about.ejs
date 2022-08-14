@@ -8,26 +8,7 @@
     <link rel="stylesheet" href="about.css" />
   </head>
   <body>
- <header>
-      <div id="top-logo-container">
-        <a href="index"
-          ><img
-            src="images/logo_top.svg"
-            alt="Logo"
-            height="80px"
-            width="187px"
-        /></a>
-      </div>
-      <!--Insert links for menu items below-->
-        <nav id="top-menu-container">
-          <!-- <button class="btn-dark" onclick="myFunction()">Dark mode</button> -->
-          <div class="top-menu-home"><a href="index">Home</a></div>
-          <div class="top-menu-library"><a href="library">Library</a></div>
-          <div class="top-menu-about-us"><a href="about">About Us</a></div>
-          <div class="top-menu-get-started"><a href="signup">Get Started</a></div>
-          <div class="top-menu-sign-in"><a href="signin">Sign In</a></div>
-        </nav>
-    </header>
+<%- include('./partials/header')%>
     <main>
       <div id="row-one">
         <div id="row-one-left">
