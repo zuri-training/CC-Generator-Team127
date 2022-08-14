@@ -2,6 +2,7 @@ const User = require('../model/user.js');
 const nodemailer = require('nodeMailer');
 const jwt = require('jsonwebtoken');
 
+
 // handle errors
 const handleErrors = (err) => {
   console.log(err.message, err.code);
@@ -184,7 +185,7 @@ exports.sendEmail = (req, res) => {
   // create reusable transporter object using the default SMTP transport
   const Transporter = nodemailer.createTransport({
     host: process.env.host,
-    port: 2525,
+    port: process.env.sendPort,
     auth: {
       user: process.env.user,
       pass: process.env.pass,
