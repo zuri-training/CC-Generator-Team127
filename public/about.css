@@ -1,7 +1,7 @@
 /*GENERAL*/
 
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 * {
   text-decoration: none;
@@ -31,7 +31,7 @@ header {
 
 header nav a {
   padding: 0 15px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -43,7 +43,7 @@ header nav a:hover {
 }
 
 header nav .top-menu-about-us a {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -55,7 +55,7 @@ header nav .top-menu-about-us a:hover {
 }
 
 header nav .top-menu-get-started a {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -74,7 +74,7 @@ header nav .top-menu-get-started a:hover {
 /*GENERAL*/
 
 h2 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -84,7 +84,7 @@ h2 {
 }
 
 p {
-  font-family: 'Vollkorn', serif;
+  font-family: "Vollkorn", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -160,7 +160,7 @@ footer {
 }
 
 footer .bottom-menu-item a {
-  font-family: 'Vollkorn', serif;
+  font-family: "Vollkorn", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -222,7 +222,7 @@ footer .bottom-menu {
 
   /*FIRST ROW*/
 
-  #row-one-right img[src='images/laptop_user.svg'] {
+  #row-one-right img[src="images/laptop_user.svg"] {
     width: 259px;
     height: 310px;
   }
