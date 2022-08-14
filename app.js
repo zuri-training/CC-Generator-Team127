@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const userRoute = require('./routes/userRoute');
 const cookieParser = require('cookie-parser');
-// const { checkUser } = require('./middleware/auth');
+const { checkUser } = require('./middleware/auth');
 
 // connect to the database
 mongoose.connect(process.env.dB_URI);
@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 // routes
-// app.get('*', checkUser);
+app.get('*', checkUser);
 app.use('/', userRoute);
 userRoute.post('/sendEmail', userRoute);
 

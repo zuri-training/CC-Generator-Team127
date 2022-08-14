@@ -9,31 +9,7 @@
     <title>Credit Card</title>
   </head>
   <body>
-    <header>
-      <div id="top-logo-container">
-        <a href="index"><img src="images/logo_top2.png" alt="Logo" height="80px" width="187px" /></a>
-      </div>
-      <!--Insert links for menu items below-->
-      <div id="top-menu-container">
-        <button id="dark-mode-toggle" class="dark-mode-toggle">
-          <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-            <path
-              fill="currentColor"
-              d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-              transform="translate(-8 -8)"
-            />
-          </svg>
-        </button>
-        <nav class="top-menu">
-          <div class="top-menu-item-home"><a href="index">Home</a></div>
-          <div class="top-menu-item"><a href="library">Library</a></div>
-          <div class="top-menu-item"><a href="about">About Us</a></div>
-          <div class="top-menu-item-get-started"><a href="signup">Get Started</a></div>
-          <div class="top-menu-item"><a href="signin">Sign In</a></div>
-        </nav>
-      </div>
-    </header>
-
+    <%- include('./partials/header')%>
     <div class="card">
       <div class="front">
         <img src="images/Gradient 5.png" alt="card front" />
