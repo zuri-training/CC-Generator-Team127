@@ -1,6 +1,7 @@
 const express = require('express');
 const userRoute = express.Router();
 const controller = require('../controllers/userController');
+const { isAuth } = require('../middleware/auth');
 
 // how-to-use
 userRoute.get('/use', controller.howTo);
@@ -20,14 +21,14 @@ userRoute.get('/library', controller.library);
 userRoute.post('/sendEmail', controller.sendEmail);
 
 // Show more cards
-userRoute.get('/download1', controller.downloadpage1);
-userRoute.get('/download2', controller.downloadpage2);
-userRoute.get('/download3', controller.downloadpage3);
-userRoute.get('/download4', controller.downloadpage4);
-userRoute.get('/download5', controller.downloadpage5);
-userRoute.get('/download6', controller.downloadpage6);
-userRoute.get('/download7', controller.downloadpage7);
-userRoute.get('/download8', controller.downloadpage8);
+userRoute.get('/download1', isAuth, controller.downloadpage1);
+userRoute.get('/download2', isAuth, controller.downloadpage2);
+userRoute.get('/download3', isAuth, controller.downloadpage3);
+userRoute.get('/download4', isAuth, controller.downloadpage4);
+userRoute.get('/download5', isAuth, controller.downloadpage5);
+userRoute.get('/download6', isAuth, controller.downloadpage6);
+userRoute.get('/download7', isAuth, controller.downloadpage7);
+userRoute.get('/download8', isAuth, controller.downloadpage8);
 
 // developer center
 userRoute.get('/developer', controller.developer);

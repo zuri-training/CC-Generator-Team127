@@ -1,19 +1,47 @@
 const jwt = require('jsonwebtoken');
+const User = require('../model/user');
 
-export const isAuth = (req, res, next) => {
-  const authorization = req.headers.authorization;
-  // console.log(authorization);
-  if (authorization) {
-    const token = authorization.slice(7, authorization.length); //Bearer xxxx
-    jwt.verify(token, process.env.JWT_SECRET, (err, decode) => {
+const isAuth = (req, res, next) => {
+  console.log(req.cookies);
+  const token = req.cookies.jwt;
+
+  // check jwt exists & is verified
+  if (token) {
+    jwt.verify(token, process.env.JWT_SECRET, (err, decodedToken) => {
       if (err) {
-        res.status(401).send({ message: 'Invalid Token' });
+        console.log(err.message);
+        res.redirect('/signin');
       } else {
-        req.user = decode;
+        console.log(decodedToken);
         next();
       }
     });
   } else {
-    res.status(401).send({ message: 'No Token' });
+    res.redirect('/signin');
   }
 };
+
+// check current user
+const checkUser = (req, res, next) => {
+  const token = req.cookies.jwt;
+  if (token) {
+    jwt.verify(token, process.env.JWT_SECRET, async (err, decodedToken) => {
+      if (err) {
+        console.log(err.message);
+        // res.redirect("/login");
+        res.locals.user = null;
+        next();
+      } else {
+        console.log(decodedToken);
+        let user = await User.findById(decodedToken.id);
+        res.locals.user = user;
+        next();
+      }
+    });
+  } else {
+    res.locals.user = null;
+    next();
+  }
+};
+
+module.exports = { isAuth, checkUser };

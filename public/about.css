@@ -42,15 +42,15 @@ header nav a:hover {
   color: #0d47a1;
 }
 
-header nav .top-menu-home a {
+header nav .top-menu-about-us a {
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
-  /* font-size: 24px; */
+  font-size: 24px;
   color: #2196f3;
 }
 
-header nav .top-menu-home a:hover {
+header nav .top-menu-about-us a:hover {
   color: #0d47a1;
 }
 
@@ -71,20 +71,6 @@ header nav .top-menu-get-started a:hover {
   background-color: #e9ecef;
 }
 
-.btn-dark {
-  width: 70px;
-  height: 30px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.dark-mode {
-  background-color: black;
-  color: #ffff;
-}
-.dark-mode > footer {
-  background-color: navy;
-}
 /*GENERAL*/
 
 h2 {
