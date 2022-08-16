@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardify :: Get Started</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <header>
+      <div id="top-logo-container">
+        <a href="index"
+          ><img src="images/logo_top.svg" alt="Logo" height="80px" width="187"
+        /></a>
+      </div>
+      <!--Insert links for menu items below-->
+      <div id="top-menu-container">
+        <nav id="top-menu-container">
+          <div class="top-menu-home"><a href="index">Home</a></div>
+          <div class="top-menu-library"><a href="library">Library</a></div>
+          <div class="top-menu-about-us"><a href="about">About Us</a></div>
+          <div class="top-menu-get-started"><a href="signup">Get Started</a></div>
+          <div class="top-menu-sign-in"><a href="signin">Sign In</a></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+        <div id="row-one">
+
+            <div id="row-one-left">
+                <h1>Get Started</h1>
+                <form id="sign-up-form" action="">
+
+                  <div class="top-form">
+
+                    <div class="column-one">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstName" placeholder="" required>
+                     <div class="firstName error"></div>
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" name="email" placeholder="" required>
+                        <div class="email error"></div>
+                      <label for="password">Password</label>
+                      <input type="password" id="password" name="password" placeholder="" required>
+                       <div class="password error"></div>
+                    </div>
+
+                    <div class="column-two">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastName" placeholder="">
+                     <div class="lastName error"></div>
+                    <label for="dob">Date of Birth (dd/mm/yy)</label>
+                    <input name="date_of_birth" type="date" id="dob" name="dob" placeholder="">
+                      <div class="date_of_birth error"></div>
+                    <label for="confirm-password">Confirm Password</label>
+                   
+                    <input type="password" id="confirm-password" name="password2" placeholder="" required>
+                      <div class="password2 error"></div>
+                  </div>
+
+                </div>
+
+                <div class="remember-container">
+                    <input type="checkbox" id="remember" name="remember" value="remember">
+                    <label class="remember-text" for="remember"> Remember me</label>
+                  </div>
+                   
+                  <div class="agree-container">
+                    <input type="checkbox" id="agree" name="agree" value="agree">
+                    <label class="agree-text" for="agree">I agree to all the <a class="terms-link" href="">Terms</a> and <a class="privacy-link" href="">Privacy Policy</a></label>
+                  </div>
+                
+                  <div class="bottom-form">
+                    <input class="create-account-button" type="submit" value="Create Account">
+                </form>
+                <p class="already-text">Already have an account? <a class="sign-in-link" href="signin">Sign in</a></p>
+              </div>
+                
+            
+            </div>
+    
+            <div id="row-one-right">
+                <img src="images/Group 29three.PNG" alt="" height="432" width="512px">
+            </div>
+    
+          </div>
+
+    </main>
+    <footer>
+      <div id="bottom-logo-container">
+        <a href="index"
+          ><img
+            src="images/logo_bottom.png"
+            alt="Logo"
+            height="80px"
+            width="187"
+        /></a>
+      </div>
+      <!--Insert links for menu items below-->
+      <div id="bottom-menu-container">
+        <nav class="bottom-menu">
+          <div class="bottom-menu-item"><a href="developer">Documentation</a></div>
+          <div class="bottom-menu-item"><a href="contact">Support</a></div>
+          <div class="bottom-menu-item"><a href="contact">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+<script>
+  const form = document.querySelector('form');
+  const firstNameError = document.querySelector('.firstName.error');
+  const lastNameError = document.querySelector('.lastName.error');
+  const emailError = document.querySelector('.email.error');
+  const passwordError = document.querySelector('.password.error');
+  const password2Error = document.querySelector('.password2.error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    console.log('a');
+
+    // reset values
+    firstNameError.textContent = '';
+    firstNameError.textContent = '';
+    emailError.textContent = '';
+    passwordError.textContent = '';
+    password2Error.textContent = '';
+
+    // get the values
+    const firstName = form.firstName.value;
+    const lastName = form.lastName.value;
+    // console.log(form.name.value);
+    const email = form.email.value;
+    const password = form.password.value;
+    const password2 = form.password2.value;
+    const date_of_birth = form.date_of_birth.value;
+    console.log(firstName, lastName, email, password);
+
+    if (password !== password2) {
+      console.log('password does not match');
+      return (password2Error.textContent = 'password does not match');
+    }
+    try {
+      const res = await fetch('/signup', {
+        method: 'POST',
+        body: JSON.stringify({ firstName, lastName, email, password, date_of_birth }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await res.json();
+      console.log(data);
+      if (data.errors) {
+        firstNameError.textContent = data.errors.name;
+        lastNameError.textContent = data.errors.name;
+        emailError.textContent = data.errors.email;
+        passwordError.textContent = data.errors.password;
+      }
+      if (data.user) {
+        location.assign('/signin');
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  });
+</script>

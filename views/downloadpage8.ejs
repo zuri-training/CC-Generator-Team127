@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecard.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>Credit Card</title>
+</head>
+<body>
+   
+   <header>
+    <div id="top-logo-container">
+      <a href="index"
+        ><img
+          src="images/logo_top2.png"
+          alt="Logo"
+          height="80px"
+          width="187px"
+      /></a>
+    </div>
+    <!--Insert links for menu items below-->
+    <div id="top-menu-container">
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+        </button>
+      <nav class="top-menu">
+        <div class="top-menu-item-home"><a href="index">Home</a></div>
+         <div class="top-menu-item"><a href="cards">Library</a></div>
+        <div class="top-menu-item"><a href="about">About Us</a></div>
+        <div class="top-menu-item-get-started"><a href="signup">Get Started</a></div>
+        <div class="top-menu-item"><a href="sign in">Sign In</a></div>
+      </nav>
+    </div>
+  </header>
+
+
+    <div class="card">
+      <div class="front">
+        <img src="images/Geometric 6.png" alt="card front">
+    </div>
+
+<div class="back">
+    <img src="images/Geometric 6back.png" alt="">
+    </div>
+    </div>
+
+    <button class="download"><a href="images/Geometric 6.png" download> download </a></button>
+<!--     
+    <button class="download">
+      <select name="cars" id="cars">
+        <option value="download">Download</option>
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+        <option value="pdf">PDF</option>
+           <option value="zip">Allformat.zip</option>
+      </select> -->
+      <button ></button>
+    </button>
+ <div class="container">
+      <div class="wrapper">
+        <button class="btn btn-like">
+          <span class="btn-icon btn--icon-default">
+            <!--<span class="fa fa-heart"></span>-->
+            <img src="images/Like button (2).png" alt="" />
+          </span>
+
+          <span class="btn-icon btn--icon-liked">
+            <img src="images/Like button (2).png" alt="" />
+          </span>
+
+          <span class="btn-content btn-content--liked"> </span>
+
+          <span class="btn-content btn-content--default"> </span>
+        </button>
+      </div>
+
+      <div>
+        <button onclick="showHide()" class="comment">
+          <img src="images/Comment button.png" alt="" />
+        </button>
+
+        <div class="button-comment" id="cmmt">
+          <textarea name="" id="" cols="20" rows="2"></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+      <button class="share-btn">
+        <img src="images/Share button.png" alt="" />
+      </button>
+
+      <div class="share-options">
+        <p class="title">share</p>
+        <div class="social-media">
+          <!-- <button class="social-media-btn"><i class="far fa-folder-open"></i></button> -->
+          <button
+            class="social-media-btn"
+            data-sharer="whatsapp"
+            data-title="Checkout Sharer.js!"
+            data-url="https://team_127.zurifordummies.com/download1"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </button>
+          <button
+            class="social-media-btn"
+            data-sharer="telegram"
+            data-title="Checkout this credit card design!"
+            data-url="https://team_127.zurifordummies.com/download1"
+          >
+            <i class="fab fa-telegram"></i>
+          </button>
+
+          <button
+            data-sharer="twitter"
+            data-title="Checkout Our credit card design!"
+            data-hashtags="designs"
+            data-url="https://team_127.zurifordummies.com/download1"
+            class="social-media-btn"
+          >
+            <i class="fab fa-twitter"></i>
+          </button>
+
+          <button
+            class="social-media-btn"
+            data-sharer="facebook"
+            data-hashtag="designs"
+            data-url="https://team_127.zurifordummies.com/download1"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button
+            class="social-media-btn"
+            data-sharer="linkedin"
+            data-url="https://team_127.zurifordummies.com/download1"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </button>
+        </div>
+        <div class="link-container">
+          <p class="link">
+            https://team_127.zurifordummies.com/download1
+            <!-- <button class="copy-btn">copy</button> -->
+          </p>
+        </div>
+      </div>
+      <button id="save">
+        <img src="images/Save button.png" alt="" />
+      </button>
+      <!--<span class="iconify" id="save" data-icon="ci:download" data-width="35"></span>-->
+        <div class="create-blog content">
+      <form action="/download1" method="POST">
+        <!-- <label for="name">Name :</label>
+        <input name="name" type="text" id="title" required /> -->
+        <!-- <label for="snippet">Blog snippet:</label>
+        <input type="text" id="snippet" name="snippet" required /> -->
+        <label for="body">Your comment:</label>
+        <textarea name="message" id="body" name="body" required></textarea>
+        <button>Submit</button>
+      </form>
+
+    </div>
+    </div>
+ 
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+  </body>
+</body>
+</html>

@@ -1,0 +1,341 @@
+/*GENERAL*/
+
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top-logo-container {
+  margin-right: auto;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+#top-menu-container {
+  display: flex;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+header nav a {
+  padding: 0 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #adb5bd;
+}
+
+header nav a:hover {
+  color: #0d47a1;
+}
+
+header nav .top-menu-about-us a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2196f3;
+}
+
+header nav .top-menu-about-us a:hover {
+  color: #0d47a1;
+}
+
+header nav .top-menu-get-started a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #adb5bd;
+  border: 2px solid #adb5bd;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header nav .top-menu-get-started a:hover {
+  color: #0d47a1;
+  background-color: #e9ecef;
+}
+
+.darkmode {
+  --clr-light: #eeeeea;
+  --clr-dark: #080808;
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+  background: var(--clr-dark);
+}
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+/*GENERAL*/
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #0d47a1;
+  padding-top: 15px;
+}
+
+p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #343a40;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 100px;
+}
+
+/*FIRST ROW*/
+
+#row-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#row-one-left {
+  width: 45%;
+  display: flexbox;
+  justify-content: left;
+  margin-top: 50px;
+}
+
+#row-one-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+/*SECOND ROW*/
+
+#row-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+#row-two-left {
+  display: flexbox;
+  justify-content: center;
+  width: 45%;
+}
+
+#row-two-right {
+  width: 45%;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1565c0;
+  margin-top: 100px;
+}
+
+#bottom-logo-container {
+  width: 25%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#bottom-menu-container {
+  width: 65%;
+  display: flex;
+  justify-content: right;
+  margin-top: 60px;
+}
+
+footer .bottom-menu-item a {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px;
+  color: #e3f2fd;
+}
+
+footer .bottom-menu-item a:hover {
+  color: #e1b713;
+}
+
+footer .bottom-menu {
+  display: flex;
+}
+
+/*RESPONSIVE MODE*/
+
+@media screen and (max-width: 720px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #top-logo-container {
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  header img {
+    height: 40px;
+    width: 93.5px;
+  }
+
+  #top-menu-container {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  header nav a {
+    font-size: 10px;
+    padding: 3px;
+  }
+
+  header nav .top-menu-about-us a {
+    font-size: 10px;
+  }
+
+  header nav .top-menu-get-started a {
+    font-size: 10px;
+    border: none;
+    padding: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  /*FIRST ROW*/
+
+  #row-one-right img[src="images/laptop_user.svg"] {
+    width: 259px;
+    height: 310px;
+  }
+
+  #row-one {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #row-one-left {
+    width: 70%;
+    display: flexbox;
+    justify-content: left;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  #row-one-right {
+    width: auto;
+    display: flex;
+    margin-top: 5px;
+    margin-right: auto;
+    padding-left: 5px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 0;
+    padding-bottom: 10px;
+    line-height: 16px;
+  }
+
+  /*SECOND ROW*/
+
+  #row-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10px;
+  }
+
+  #row-two-left {
+    display: flexbox;
+    width: 70%;
+    justify-content: left;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  #row-two-right {
+    width: auto;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  footer img {
+    height: 40px;
+    width: 93.5px;
+  }
+
+  #bottom-logo-container {
+    width: auto;
+    margin: 10px 20px;
+  }
+
+  #bottom-menu-container {
+    width: auto;
+    display: flex;
+    justify-content: left;
+    margin: 10px 20px;
+  }
+
+  footer .bottom-menu-item a {
+    font-size: 10px;
+    line-height: 22px;
+    padding: 10px;
+    padding-left: 0;
+  }
+}
