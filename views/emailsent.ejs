@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Cardify Credit Card Generator</title>
-    <link rel="stylesheet" href="reset_password.css" />
+    <link rel="stylesheet" href="email_sent.css" />
   </head>
   <body>
     <header>
       <div id="top-logo-container">
-        <a href="index.html"
+        <a href="index"
           ><img
             src="images/logo_top.svg"
             alt="Logo"
@@ -20,32 +20,30 @@
       </div>
       <!--Insert links for menu items below-->
         <nav id="top-menu-container">
-          <div class="top-menu-home"><a href="index.html">Home</a></div>
+          <div class="top-menu-home"><a href="index">Home</a></div>
           <div class="top-menu-library"><a href="">Library</a></div>
-          <div class="top-menu-about-us"><a href="about.html">About Us</a></div>
-          <div class="top-menu-get-started"><a href="sign_up.html">Get Started</a></div>
-          <div class="top-menu-sign-in"><a href="sign_in.html">Sign In</a></div>
+          <div class="top-menu-about-us"><a href="about">About Us</a></div>
+          <div class="top-menu-get-started"><a href="signup">Get Started</a></div>
+          <div class="top-menu-sign-in"><a href="signin">Sign In</a></div>
            <button id="dark-mode-toggle" class="dark-mode-toggle">
         <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
         </button>
         </nav>
     </header>
     <main>
-
+     
         <div id="row-one">
-            <h1>Reset your password</h1>
-            <p>What's your email, name, or username?</p>
+            <h1>Email sent</h1>
+            <p>We sent an email to <a href=""><strong></strong>[insert email here]</a>! If this email is connected to a Cardify account, you'll be able to reset your password.</p>
+            <p>Didn't get the email? Try these tips from our<a href=""><strong> Help center</strong></a>.</p>
 
-            <div id="row-two">
-                <form id="search-form" action="">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button id="search-button" type="submit">Search</button>
-                </form>
-                <a href=""><button id="password-reset-button">Send a password reset email</button></a>
-            </div>
+            <div id="button-container">
+            <a href=""><button id="try-again-button">Try again</button></a>
+            <a href=""><button id="back-to-sign-in-button">Back to sign in</button></a>
+        </div>
 
         </div>
-       
+
     </main>
     <footer>
       <div id="bottom-logo-container">
@@ -66,6 +64,6 @@
         </nav>
       </div>
     </footer>
-      <script src="index.js"</script>
+      <script src="index.js"></script>
   </body>
 </html>

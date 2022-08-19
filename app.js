@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const userRoute = require('./routes/userRoute');
 const commentRoute = require('./routes/commentRoute');
+const passwordRoute = require('./routes/passwordRoute');
 const cookieParser = require('cookie-parser');
 const { checkUser } = require('./middleware/auth');
 
@@ -25,6 +26,7 @@ app.set('view engine', 'ejs');
 app.get('*', checkUser);
 
 userRoute.post('/sendEmail', userRoute);
+app.use('/', passwordRoute);
 app.use('/', userRoute);
 app.use('/', commentRoute);
 // assign a port

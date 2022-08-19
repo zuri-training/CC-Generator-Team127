@@ -46,11 +46,11 @@ header nav .top-menu-home a {
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  /* font-size: 24px; */
   color: #2196f3;
 }
 
-header nav .top-menu-home a:hover {
+header nav .top-menu-about-us a:hover {
   color: #0d47a1;
 }
 
@@ -92,22 +92,13 @@ header nav .top-menu-get-started a:hover {
   width: 30px;
   height: 30px;
 }
-/* 
-.btn-dark {
-  width: 70px;
-  height: 30px;
-  border-radius: 20px;
-  cursor: pointer;
-}
 
-.dark-mode {
-  background-color: black;
-  color: #ffff;
-}
-.dark-mode > footer {
-  background-color: navy;
-} */
 /*FIRST ROW*/
+
+#row-one-center img[src='images/design_home_row1.svg'] {
+  margin-bottom: -219px;
+  margin-left: -104px;
+}
 
 #row-one {
   display: flex;
@@ -169,6 +160,12 @@ main .row-one-paragraph {
 
 /*SECOND ROW*/
 
+#row-two-design-container img[src='images/design_home_row2.svg'] {
+  margin-left: -140px;
+  margin-bottom: -25px;
+  /* margin-left: ; */
+}
+
 #row-two {
   display: flex;
   flex-direction: row;
@@ -225,6 +222,14 @@ hr {
 }
 
 /*THIRD ROW*/
+
+#row-three-right-design-container img {
+  margin-left: -20px;
+}
+
+.row-three-bullet {
+  margin-left: -20px;
+}
 
 #row-three {
   display: flex;
@@ -392,6 +397,8 @@ footer .bottom-menu {
 /*RESPONSIVE MODE*/
 
 @media screen and (max-width: 720px) {
+  /*HEADER*/
+
   header {
     display: flex;
     justify-content: flex-end;
@@ -431,6 +438,27 @@ footer .bottom-menu {
     margin-right: 2px;
   }
 
+  .darkmode {
+    --clr-light: #eeeeea;
+    --clr-dark: #080808;
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+    background: var(--clr-dark);
+  }
+  .dark-mode-toggle {
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    color: var(--foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+  }
   /*FIRST ROW*/
 
   #row-one-right img[src='images/credit_cards_stack.png'] {

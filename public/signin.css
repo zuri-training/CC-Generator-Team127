@@ -223,6 +223,8 @@ footer .bottom-menu {
 /*RESPONSIVE MODE*/
 
 @media screen and (max-width: 720px) {
+  /*HEADER*/
+
   header {
     display: flex;
     flex-direction: row;
@@ -372,7 +374,6 @@ footer .bottom-menu {
     padding-left: 0;
   }
 }
-
 .error {
   color: #ff0099;
   margin: 10px 2px;
