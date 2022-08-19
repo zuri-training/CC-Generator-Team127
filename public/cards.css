@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+/*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
   text-decoration: none;
@@ -246,32 +248,66 @@ footer .bottom-menu {
 }
 
 /* SCREEN 425PX */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 720px) {
   header {
     /* width: 50%; */
     /* margin-right: 150px; */
     display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: self-start;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+    /* height: auto;
+    align-items: self-start; */
   }
 
-  nav {
+  #top-logo-container {
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  header img {
+    height: 40px;
+    width: 93.5px;
+  }
+
+  #top-menu-container {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  header nav a {
+    font-size: 10px;
+    padding: 3px;
+  }
+
+  header nav .top-menu-home a {
+    font-size: 10px;
+  }
+
+  header nav .top-menu-get-started a {
+    font-size: 10px;
+    border: none;
+    padding: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  /* nav {
     font-size: 2.4em;
     width: 100%;
-  }
+  } */
 
-  header a {
+  /* header a {
     text-decoration: none;
     color: gray;
     font-size: 0.6rem;
     padding: 10px;
     margin-left: 0;
-  }
+  } */
 
-  header img {
+  /* header img {
     margin: 20px 0;
-  }
+  } */
 
   .browse {
     width: 100%;
