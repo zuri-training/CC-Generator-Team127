@@ -2,7 +2,6 @@ const User = require('../model/user.js');
 const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 
-
 // handle errors
 const handleErrors = (err) => {
   console.log(err.message, err.code);
